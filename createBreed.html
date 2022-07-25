@@ -91,11 +91,12 @@
                     </ul>
                 </div>
                 <div id="dateOfbirth">
-                    <input type="text"  id="dayInput"  placeholder="DD"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                    <input type="text" id="monthInput" placeholder="MM"  pattern="^[0-9]{10}$">
-                    <input type="text" id="yearInput"  placeholder="YYYY"  pattern="^[0-9]{10}$">
+                    <input type="text" id="dayInput" placeholder="DD"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="text" id="monthInput" placeholder="MM" pattern="^[0-9]{10}$">
+                    <input type="text" id="yearInput" placeholder="YYYY" pattern="^[0-9]{10}$">
                 </div>
-                
+
 
                 <!-- Upload picture field -->
                 <div class="uploadPicture">
@@ -150,12 +151,6 @@
         <div id="email">
             <h5><a href="">example@email.com</a></h5>
         </div>
-    </div>
-
-    <!-- Validation dialogue box -->
-    <div id="nameValidation">
-        <div class="closeButton"></div>
-        <p>Cannot enter digits in name.</p>
     </div>
 
     <script src="createBreed.js"></script>

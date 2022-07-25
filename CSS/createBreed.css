@@ -343,21 +343,7 @@ textarea {
     border-radius: 30px;
     border: 1px solid #DB6516;
 }
-
-/*#nameValidation .closeButton{
-    right: 25px;
-    top: 20px;
-    width: 25px;
-    height: 25px;
-}
-
-#nameValidation .closeButton:after, #nameValidation .closeButton::before{
-    left: 11.5px;
-    top: 4px;
-    height: 14px;
-    width: 1px;
-} */
-
+    
 /* Responsive CSS */
 @media (min-width:768px) and (max-width:1023px) {
 
