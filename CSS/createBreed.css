@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: #473A2E;
+}
+
+button {
+    font-size: 16px;
+}
+
+.givePadding {
+    padding: 40px 48px;
+}
+
+.cardContainer,.card,.uploadPicture,.uploadLogo,.upload-popup {
+    display: flex;
+}
+
+/* Step 1 */
+
+.cardContainer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex-direction: row;
+    width: 400px;
+    background-color: #F1F0F2;
+    border: 1px solid #DB6516;
+}
+
+.card-img-top {
+    width: 50%;
+}
+
+.card-body {
+    text-align: center;
+    font-size: 10px;
+}
+
+.card-body h2 {
+    font-size: 3.6em;
+}
+
+.card-body a {
+    font-size: 2.4em;
+}
+
+.moreBreeds {
+    text-align: inherit;
+}
+
+.moreBreeds a {
+    text-decoration: none;
+}
+
+.moreBreeds:hover {
+    background-color: #F1F0F2;
+    color: #473A2E;
+}
+
+.card:hover {
+    cursor: pointer;
+    background: linear-gradient(79.99deg, #DB6516 1.25%, #E37D0E 53.47%);
+    color: #ffffff;
+}
+
+.steps {
+    margin-left: 10px;
+    margin-bottom: 40px;
+    font-size: 10px;
+}
+
+.steps h6 {
+    font-size: 2em;
+}
+
+.steps h3 {
+    font-size: 3.6em;
+}
+
+/* Step 2 */
+
+.breedDetails {
+    margin-top: 56px;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(5, 1fr);
+    gap: 10px 30px;
+    margin-left: 10px;
+}
+
+label {
+    font-size: 24px;
+}
+
+#dropdownButton {
+    background: #FFFFFF;
+    width: 380px;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+    text-align: inherit;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(102, 102, 102, 1);
+}
+
+#dropdownButton:focus,
+#dobInput:focus,
+textarea:focus,
+input:focus {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    outline: 1px solid rgba(227, 125, 14, 1);
+}
+
+.dropdown-menu {
+    width: 380px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-toggle::after {
+    margin-left: 65%;
+}
+
+#dayInput,
+#monthInput,
+#yearInput {
+    width: 126px;
+}
+
+.uploadPicture {
+    width: 511px;
+    height: 323px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 3;
+}
+
+.uploadLogo {
+    width: 416px;
+    height: 158px;
+    background: #F1F0F2;
+    border: 2px dashed #696161;
+    border-radius: 15px;
+}
+
+.uploadLogo img {
+    margin: auto;
+}
+
+.uploadPicture h4 {
+    font-size: 20px;
+}
+
+.uploadPicture button {
+    width: 416px;
+    height: 61px;
+    background: #FFFFFF;
+    color: #DB6516;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+}
+
+.uploadPicture button:hover {
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+}
+
+input {
+    width: 380px;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+    padding: 10px;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    grid-column-start: 2;
+}
+
+#saveBreed {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-top: 80px;
+}
+
+#saveBreed button {
+    font-size: 24px;
+    width: 600px;
+}
+
+#saveBreed button:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
+}
+
+#uploadPopup-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 823px;
+    height: 536px;
+    top: 15%;
+    left: 23%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+    border: 1px solid #DB6516;
+    position: fixed;
+}
+
+.closeButton {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+}
+
+.closeButton:before,
+.closeButton:after {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    content: ' ';
+    height: 18px;
+    width: 1px;
+    background-color: #333;
+}
+
+.closeButton:before {
+    transform: rotate(45deg);
+}
+
+.closeButton:after {
+    transform: rotate(-45deg);
+}
+
+.upload-popup {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 634px;
+    height: 379px;
+    border: 2px dashed #666666;
+    border-radius: 15px;
+}
+
+.upload-popup:hover {
+    background: #F1F0F2;
+}
+
+#browse {
+    color: rgba(25, 119, 243, 1);
+    cursor: pointer;
+}
+
+#browse:hover {
+    text-decoration: underline;
+}
+
+#interest {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 401px;
+    height: 418px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+    border: 1px solid #DB6516;
+    top: 15%;
+    left: 35%;
+    position: fixed;
+    padding: 32px;
+    text-align: center;
+    font-size: 10px;
+}
+
+#interest h4 {
+    color: #DB6516;
+    font-size: 3em;
+}
+
+#interest p {
+    font-size: 2em;
+}
+
+#email {
+    padding: 12px;
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#email a {
+    text-decoration: none;
+    color: rgba(25, 119, 243, 1);
+}
+
+#email a:hover {
+    text-decoration: underline;
+}
+
+#nameValidation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300px;
+    height: 200px;
+    top: 30%;
+    left: 40%;
+    position: fixed;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+    border: 1px solid #DB6516;
+}
+
+/*#nameValidation .closeButton{
+    right: 25px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+#nameValidation .closeButton:after, #nameValidation .closeButton::before{
+    left: 11.5px;
+    top: 4px;
+    height: 14px;
+    width: 1px;
+} */
+
+/* Responsive CSS */
+@media (min-width:768px) and (max-width:1023px) {
+
+    .formContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+        grid-template-rows: auto repeat(13, 1fr) !important;
+        row-gap: 20px;
+    }
+
+    .cardContainer {
+        justify-content: center;
+    }
+
+    .card {
+        margin-bottom: 24px;
+    }
+
+    .steps {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    label {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #dropdownButton {
+        grid-row: 2;
+    }
+
+    #dob {
+        grid-row: 3;
+    }
+
+    #dateOfbirth {
+        grid-row: 4;
+    }
+
+    #breedName {
+        grid-row: 5;
+    }
+
+    #breednameInput {
+        grid-row: 6;
+    }
+
+    #collarId {
+        grid-row: 7;
+    }
+
+    #collarIdInput {
+        grid-row: 8;
+    }
+
+    #about {
+        grid-row: 9;
+    }
+
+    #aboutText {
+        grid-row-start: 10;
+        grid-row-end: 12;
+        grid-column: 1;
+    }
+
+    #proPic {
+        grid-row: 12;
+    }
+
+    .uploadPicture {
+        grid-row-start: 13;
+        grid-row-end: 15;
+        grid-column: 1;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #dropdownButton,
+    #collarIdInput,
+    #breednameInput,
+    #dateOfbirth {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        height: 60px;
+    }
+
+    #uploadPopup-container {
+        width: 423px;
+        height: 336px;
+    }
+
+    .upload-popup {
+        width: 234px;
+        height: 179px;
+    }
+
+    .upload-popup img {
+        width: 30%;
+    }
+
+    .upload-popup h4 {
+        font-size: 11px;
+    }
+
+    #interest {
+        left: 26%;
+    }
+
+}
+
+@media(min-width:1024px) and (max-width:1439px) {
+
+    .formContainer {
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-rows: auto repeat(7, 1fr) !important;
+        row-gap: 20px;
+    }
+
+
+    .cardContainer {
+        justify-content: space-between;
+    }
+
+    .card {
+        margin-bottom: 24px;
+    }
+
+    .steps {
+        font-size: 9px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    #proPic {
+        grid-row: 5;
+    }
+
+    .uploadPicture {
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 2;
+    }
+
+    #collarId {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #collarIdInput {
+        grid-row: 4;
+        grid-column: 2;
+    }
+
+    #about {
+        grid-row: 5;
+        grid-column: 1;
+    }
+
+    textarea {
+        grid-row-start: 6;
+        grid-row-end: 9;
+        grid-column-start: 1;
+    }
+
+    #saveBreed {
+        margin-top: 40px;
+    }
+
+    #uploadPopup-container {
+        width: 623px;
+        height: 436px;
+    }
+
+    .upload-popup {
+        width: 434px;
+        height: 279px;
+    }
+
+    .upload-popup h4 {
+        font-size: 20px;
+    }
+
+}
+
+@media(min-width:1440px) {
+
+    #dayInput,
+    #monthInput,
+    #yearInput {
+        width: 116px;
+    }
+}

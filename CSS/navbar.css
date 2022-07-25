@@ -1,0 +1,53 @@
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 24px 70px 0px 70px;
+}
+
+#brandLogo {
+    height: 38px;
+    width: 38px;
+    background-color: #473A2E;
+    border-radius: 20px;
+}
+
+#brandName {
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+button {
+    height: 52px;
+    padding: 10px 50px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    color: #F1F0F2;
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    #brandName {
+        font-size: 1.5em;
+    }
+
+    #brandLogo {
+        height: 18px;
+        width: 18px;
+    }
+}
+
+@media(min-width:1024px) and (max-width:1439px) {
+    #brandName {
+        font-size: 2em;
+    }
+
+    #brandLogo {
+        height: 24px;
+        width: 24px;
+    }
+}

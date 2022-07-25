@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: #473A2E;
+}
+
+h1 {
+    text-align: center;
+}
+
+#loginPortal, .loginFormDiv, #brandName, #forgotPass, #notRegistered, .otp  {
+    display: flex;
+    justify-content: center;
+}
+
+#imgContainer {
+    background-image: url(assets/images/horsesInstable.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.loginFormDiv {
+    flex-direction: column;
+    font-size: 10px;
+    background-color: #f1f0f2;
+    margin-left: -70px;
+    width: 100%;
+    height: auto;
+    border-radius: 80px 0px 0px 80px;
+}
+
+.formDivPadding {
+    padding: 20px;
+}
+
+.formDivHeader {
+    margin: 5% 0%;
+    font-size: 10px;
+}
+
+.formDivHeader h1 {
+    font-size: 4.8em;
+    margin-top: -14px;
+}
+
+#brandLogo {
+    height: 18px !important;
+    width: 18px !important;
+    background-color: #473A2E;
+    border-radius: 20px;
+}
+
+#brandName {
+    font-size: 3em;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+/* Login Form */
+
+
+#signInform,
+#signUpform {
+    font-size: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+}
+
+label {
+    font-size: 2.4em;
+}
+
+#signIn,
+#signUp {
+    font-size: 3.6em;
+    margin-top: -12px;
+    margin-bottom: 20px;
+}
+
+#signInform input {
+    height: 42px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: initial;
+    padding: 5px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #DB6516;
+}
+
+input:focus{
+    outline: 1px solid rgba(227, 125, 14, 1);
+}
+
+a {
+    text-decoration: none;
+    color: #1977F3;
+}
+
+a:hover{
+    color: #1977F3;
+}
+
+#signInform button {
+    width: 100%;
+    height: 42px;
+    font-size: 2.4em;
+    padding: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
+}
+
+#forgotPass {
+    font-size: 2em;
+    margin: 10px 0px 24px 0px;
+    justify-content: flex-end;
+}
+
+#notRegistered {
+    justify-content: start;
+    font-size: 2.4em;
+    margin: 10px 0px 32px 0px;
+}
+
+#createAccount:hover,#forgotPass:hover,
+#signUp a:hover {
+    text-decoration: underline;
+}
+
+.otp {
+    font-size: 3em;
+    align-items: center;
+    margin: 20px;
+}
+
+.line {
+    background-color: #727272;
+    width: 160px;
+    height: 1px;
+}

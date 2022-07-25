@@ -1,0 +1,41 @@
+<!-- Sign up form -->
+<form action="" id="signUpform">
+    <h3 id="signUp">Sign up</h3>
+
+    <div class="namesContainer">
+        <div class="fName">
+            <label for="lblFirstName">First Name</label><br><input type="text" name="firstName" id="firstName">
+        </div>
+        <div class="lName">
+            <label for="lblLastName">Last Name</label><br><input type="text" name="lastName" id="lastName"> <br>
+        </div>
+
+    </div>
+
+    <label for="lblEmail">Email Address</label> <br><input type="email" name="email" id="email"> <br>
+    <label for="lblContactNum">Contact Number</label><br><input type="tel" name="tel" id="contactNumber"><br>
+    <h3 id="selectOne">Select one</h3>
+    <div class="optionHolder">
+        <input type="radio" name="userType" id="breeder"><label for="lblBreeder">Animal Breeder</label>
+        <input type="radio" name="userType" id="owner"><label for="lblOwner">Animal Owner</label>
+    </div>
+
+    <div class="buttonContainer">
+        <button id="backTologin">Back</button>
+        <button id="createAcc">Create your account</button>
+    </div>
+</form>
+<link rel="stylesheet" href="CSS/signUp.css">
+<link rel="stylesheet" href="CSS/responsive.css">
+<script>
+    // Loads Sign in form when clicked on 'Back' button.
+    var backTologin = document.getElementById('backTologin');
+    backTologin.addEventListener('click', () => {
+        $("#formContainer").empty();
+        $("#formContainer").load("signIn.html");
+    })
+
+  $( "#createAcc" ).click(function() {
+    $( "#createAcc" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
+  });
+</script>

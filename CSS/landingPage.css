@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+    padding: 0px 0px 72px 0px;
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+    color: #473A2E;
+}
+
+button {
+    height: 52px;
+    padding: 10px 50px;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 6px;
+    border: none;
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    color: #F1F0F2;
+}
+
+a{
+    text-decoration: none;
+}
+
+.createBreed a{
+color: #ffffff;
+}
+
+.createBreed a:hover{
+    color: black;
+}
+
+/* Section one */
+
+.sectionOne {
+    font-size: 10px;
+    text-align: center;
+}
+
+.sectionOne h3 {
+    font-size: 3.6em;
+}
+
+.sectionOne h4 {
+    font-size: 6.4em;
+    margin-top: 80px;
+}
+
+.sectionOne button {
+    font-size: 2.4em;
+    padding: 0px 50px;
+    margin-top: 32px;
+}
+
+/* Sections*/
+.sectionTwo, .sectionThree, .sectionFour, .sectionFive, .sectionSix {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
+    margin-top: 104px;
+    padding: 60px;
+}
+
+.description h4 {
+    font-size: 6.4em;
+}
+
+.description p {
+    font-size: 3.6em;
+    margin-top: 24px;
+}
+
+.sectionImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sectionImg img {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+}
+
+.sectionSix{
+    display: block;
+}
+
+.subContainer{
+    display: flex;
+}
+
+.buttonSecSix{
+    text-align: center;
+    margin-top: 48px;
+    font-size: 24px;
+}
+
+/* Responsive CSS*/
+
+@media (min-width:768px) and (max-width:1023px){
+
+button{
+    height: 32px !important;
+    padding: 0px 50px !important;
+}
+
+.sectionOne {
+    font-size: 8px;
+}
+
+.sectionTwo, .sectionThree, .sectionFour, .sectionFive, .sectionSix {
+    font-size: 5px;
+}
+
+.createBreed{
+    font-size: 24px;
+    height: 40px;
+}
+}
+
+@media(min-width:1024px) and (max-width:1439px){
+    #brandName {
+        font-size: 2em;
+    }
+
+    #brandLogo {
+        height: 24px;
+        width: 24px;
+    }
+
+    button{
+        height: 42px;
+        padding: 4px 50px;
+    }
+
+    .sectionOne {
+        font-size: 9px;
+    }
+
+    .sectionTwo, .sectionThree, .sectionFour, .sectionFive, .sectionSix {
+        font-size: 7px;
+    }
+}
+
+@media(min-width:1920px){
+    #brandName {
+        font-size: 4em;
+    }
+
+    button{
+        height: 72px;
+        font-size: 24px;
+    }
+
+    .sectionOne {
+        font-size: 12px;
+    }
+}

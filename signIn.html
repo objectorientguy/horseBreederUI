@@ -1,0 +1,43 @@
+<!-- Sign in form -->
+<form action="" id="signInform">
+    <h3 id="signIn">Sign in</h3>
+    <label for="lblEmail">Email Address</label><br><input type="email" name="email"
+        id="email"><br><br>
+    <label for="lblPassword">Password</label><br><input type="password" name="password"
+        id="password">
+    <a href="">
+        <h6 id="forgotPass">Forgot Password?</h6>
+    </a>
+    <!-- Button1 -->
+    <button id="signInbutton">Sign in</button>
+    <h6 id="notRegistered">Not Registered yet? &nbsp;<a href="#" id="createAccount">Create an
+            account</a>
+    </h6>
+    <!-- The 'or Sign in with OTP' divider -->
+    <div class="otp">
+        <div class="line"></div> &nbsp;
+        <h6 style="color: #727272;">or Sign in with OTP</h6> &nbsp;
+        <div class="line"></div>
+    </div>
+    <!-- Button2 -->
+    <button id="otpButton">Receive an OTP</button>
+</form>
+
+<script>
+    // Loads Sign up form when 'Create Account' is clicked.
+    var createAccount = document.getElementById("createAccount");
+    createAccount.addEventListener('click', () => {
+        $("#formContainer").empty();
+        $("#formContainer").load("signUp.html");
+    })
+
+    $( "#signInbutton" ).click(function() {
+    $( "#signInbutton" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
+  });
+
+  $( "#otpButton" ).click(function() {
+    $( "#otpButton" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
+  });
+
+  
+</script>
