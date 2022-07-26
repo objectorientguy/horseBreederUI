@@ -230,7 +230,7 @@
 
     #firstName,
     #lastName {
-        width: 181px;
+        width: 181px !important;
     }
 
     #email,
@@ -248,10 +248,10 @@
         font-size: 16px;
     }
 
-    #signUpform button {
-        width: 42%;
-        margin-right: 26px;
-        margin-left: 9px;
+   #signUpform button {
+        width: 42% !important;
+        margin-right: 32px !important;
+        margin-left: 6px !important;
     }
 }
 
