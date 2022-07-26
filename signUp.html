@@ -11,13 +11,18 @@
         </div>
 
     </div>
+    
+    <div class="emailContact">
+        <label for="lblEmail">Email Address</label> <br><input type="email" name="email" id="email"> <br>
+        <label for="lblContactNum">Contact Number</label><br><input type="tel" name="tel" id="contactNumber"><br>
+    </div>
+    
 
-    <label for="lblEmail">Email Address</label> <br><input type="email" name="email" id="email"> <br>
-    <label for="lblContactNum">Contact Number</label><br><input type="tel" name="tel" id="contactNumber"><br>
     <h3 id="selectOne">Select one</h3>
+
     <div class="optionHolder">
-        <input type="radio" name="userType" id="breeder"><label for="lblBreeder">Animal Breeder</label>
-        <input type="radio" name="userType" id="owner"><label for="lblOwner">Animal Owner</label>
+        <div id="breeder">Animal Breeder</div>
+        <div id="owner">Animal Owner</div>
     </div>
 
     <div class="buttonContainer">
@@ -26,8 +31,25 @@
     </div>
 </form>
 <link rel="stylesheet" href="CSS/signUp.css">
-<link rel="stylesheet" href="CSS/responsive.css">
+<link rel="stylesheet" href="CSS/loginResponsive.css">
 <script>
+
+    var owner = document.getElementById('owner');
+    var breeder = document.getElementById('breeder');
+    owner.addEventListener('click', () => {
+        owner.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
+        owner.style.borderRadius = '0px 15px 15px 0px';
+        owner.style.color = '#FFFFFF';
+        breeder.style.background = '#FFFFFF';
+        breeder.style.color = '#DB6516';
+    })
+
+    breeder.addEventListener('click', () => {
+        breeder.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
+        breeder.style.color = '#FFFFFF';
+        owner.style.background = '#FFFFFF';
+        owner.style.color = '#DB6516';
+    })
     // Loads Sign in form when clicked on 'Back' button.
     var backTologin = document.getElementById('backTologin');
     backTologin.addEventListener('click', () => {
@@ -42,5 +64,5 @@
             createAccountButton.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
         }, 100);
     })
-    
+
 </script>

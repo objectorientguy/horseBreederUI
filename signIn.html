@@ -1,7 +1,7 @@
 <!-- Sign in form -->
 <form action="" id="signInform">
-    <h3 id="signIn">Sign in</h3>
-    <label for="lblEmail">Email Address</label><br><input type="email" name="email" id="email"><br><br>
+    <!-- <h3 id="signIn">Sign in</h3> -->
+    <label for="lblEmail">E-mail Address</label><br><input type="email" name="email" id="email"><br><br>
     <label for="lblPassword">Password</label><br><input type="password" name="password" id="password">
     <a href="">
         <h6 id="forgotPass">Forgot Password?</h6>
@@ -15,7 +15,7 @@
     <!-- The 'or Sign in with OTP' divider -->
     <div class="otp">
         <div class="line"></div> &nbsp;
-        <h6 style="color: #727272;">or Sign in with OTP</h6> &nbsp;
+        <h6  id="otpSignIn">or Sign in with OTP</h6> &nbsp;
         <div class="line"></div>
     </div>
     <!-- Button2 -->
@@ -37,7 +37,7 @@
         setInterval(() => {
             signIn.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
         }, 100);
-        window.location = 'landingPage.html';
+        // window.location = 'landingPage.html';
     });
 
 

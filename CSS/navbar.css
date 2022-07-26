@@ -48,10 +48,6 @@
     cursor: pointer;
 }
 
-.vertical {
-    border: 1px solid #968787;
-}
-
 .userButtons {
     display: flex;
     align-items: center;

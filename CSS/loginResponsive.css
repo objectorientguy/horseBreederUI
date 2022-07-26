@@ -76,9 +76,9 @@
 }
 
 @media (min-width:768px) and (max-width:1023px) {
-    .formDivHeader h1 {
-        margin-top: 0px;
-        font-size: 2em;
+
+    #formContainer {
+        margin-left: 48px !important;
     }
 
     #brandLogo {
@@ -88,11 +88,7 @@
 
     #brandName {
         font-size: 1.5em;
-        margin-bottom: 5px;
-    }
-
-    #signIn {
-        font-size: 3em;
+        margin-bottom: 56px !important;
     }
 
     #signInform {
@@ -102,20 +98,23 @@
 
     button,
     input {
-        height: 32px;
+        height: 32px !important;
         width: 100%;
     }
 
     #forgotPass {
-        margin: 5px 0px 16px 0px;
+        margin: 5px 4px 32px 0px;
+        ;
+        font-size: 12px;
     }
 
     #notRegistered {
-        margin: 10px 0px 12px 0px;
+        margin: 10px 0px 24px 8px;
+        font-size: 12px;
     }
 
     .otp h6 {
-        font-size: 10px;
+        font-size: 10px !important;
     }
 
     .otp {
@@ -133,26 +132,44 @@
         margin-left: 32px;
     }
 
+    #firstName,
+    #lastName {
+        width: 133px !important;
+    }
+
+    #email,
+    #contactNumber {
+        width: 300px !important;
+    }
+
     #selectOne {
         font-size: 14px;
     }
 
+    .optionHolder {
+        height: 32px;
+        width: 298px;
+    }
+
     #breeder,
     #owner {
-        height: 12px !important;
-        width: 5%;
+        font-size: 13px;
     }
 
     label {
         margin: 8px 0px;
+        font-size: 16px;
+    }
+
+    #signUpform button {
+        width: 40%;
+        margin-right: 16px;
+        margin-left: 8px;
+        font-size: 1.8em;
     }
 }
 
 @media (min-width:1024px) and (max-width:1439px) {
-    #imgContainer img {
-        height: auto;
-    }
-
     .loginFormDiv {
         border-radius: 95px 0px 0px 95px;
     }
@@ -165,31 +182,41 @@
         font-size: 10px;
     }
 
-    #signIn {
-        font-size: 2em;
+    #brandName {
+        font-size: 3.4em !important;
     }
 
     label {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #forgotPass {
-        font-size: 1em;
-        margin: 12px 0px;
+        font-size: 1.2em;
+        margin: 12px 8px;
     }
 
     input,
     button {
         font-size: 1.5em !important;
+        width: 398px !important;
     }
 
     #notRegistered {
         font-size: 1.5em;
-        margin: 12px 0px;
+        margin: 12px 8px;
+        ;
     }
 
     .otp {
         margin: 5px;
+    }
+
+    #otpSignIn {
+        font-size: 11px;
+    }
+
+    .line {
+        width: 138px;
     }
 
     .otp h6 {
@@ -198,7 +225,33 @@
 
     /* Signup Form */
     #selectOne {
-        font-size: 12px;
+        font-size: 15px;
+    }
+
+    #firstName,
+    #lastName {
+        width: 181px;
+    }
+
+    #email,
+    #contactNumber {
+        width: 398px !important;
+    }
+
+    .optionHolder {
+        width: 398px;
+        height: 52px;
+    }
+
+    #breeder,
+    #owner {
+        font-size: 16px;
+    }
+
+    #signUpform button {
+        width: 42%;
+        margin-right: 26px;
+        margin-left: 9px;
     }
 }
 
@@ -209,6 +262,10 @@
 
     .loginFormDiv {
         width: 1000px;
+    }
+
+    #signUpform button {
+        font-size: 2em;
     }
 
 }

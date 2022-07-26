@@ -3,11 +3,11 @@
     display: none;
 }
 
-/* Sign up form */
-
-#signUpform {
-    margin-top: 10%;
+#formContainer {
+    margin-left: 88px !important;
 }
+
+/* Sign up form */
 
 #signUpform input {
     height: 42px;
@@ -22,64 +22,84 @@ input:focus {
     outline: 1px solid rgba(227, 125, 14, 1);
 }
 
+label {
+    margin: 21px 0px 12px 0px;
+}
+
 #email,
 #contactNumber {
-    width: 100% !important;
+    width: 598px !important;
 }
 
 #firstName,
 #lastName {
-    width: 95%;
-}
-
-label {
-    margin: 15px 0px;
+    margin-right: 32px;
+    width: 279px;
 }
 
 #signUpform button {
     height: 42px;
-    width: 48%;
-    font-size: 2.2em;
-    padding: 5px;
-    font-family: 'Open Sans', sans-serif;
+    width: 40%;
+    margin-right: 32px;
+    margin-left: 13px;
+    font-size: 2.4em;
+    font-weight: 700;
+    padding: 2px;
     border-radius: 6px;
     border: 1px solid #DB6516;
 }
 
 .namesContainer {
     display: flex;
-    justify-content: space-between;
 }
 
 #selectOne {
-    margin-top: 15px;
-    font-size: 19px;
+    margin: 24px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .optionHolder {
+    height: 72px;
+    width: 598px;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    padding: 5px;
     background: #FFFFFF;
-    border-radius: 6px;
+    border-radius: 15px;
     border: 1px solid #DB6516;
+}
+
+#breeder {
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
 }
 
 #breeder,
 #owner {
-    accent-color: #DB6516;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    height: 100%;
+    width: 50%;
+    color: #FFFFFF;
 }
 
-#breeder:focus,
-#owner:focus {
-    outline: none;
+#owner {
+    color: #DB6516;
+}
+
+#breeder:hover,
+#owner:hover {
+    cursor: pointer;
 }
 
 .buttonContainer {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 24px;
+    margin-top: 64px;
 }
 
 #backTologin {
