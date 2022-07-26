@@ -30,7 +30,8 @@
         <h4>Don't wait add <br>
             your first breed now!</h4>
 
-        <button class="createBreed"> <a href="createBreed.html">Create your breed</a> </button>
+        <!-- <a href="createBreed.html"></a> -->
+        <button class="createBreed" type="button"> Create your breed </button>
     </div>
 
     <!-- Section 2 -->
@@ -140,12 +141,19 @@
         </div>
 
         <div class="buttonSecSix">
-            <button class="createBreed"> <a href="createBreed.html">Create your breed</a> </button>
+            <!-- <a href="createBreed.html"></a> -->
+            <button class="createBreed" type="button">Create your breed </button>
         </div>
     </div>
 
     <script>
         $('#navContainer').load('navbar.html');
+
+        Array.from(document.getElementsByClassName('createBreed')).forEach((e) => {
+            e.addEventListener('click', () => {
+                window.location = 'createBreed.html';
+            })
+        })
     </script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0px 0px 64px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #473A2E;
+}
+
+#brandName {
+    margin-top: -14px;
+}
+
+.vertical {
+    height: 63px;
+}
+
+.userButtons {
+    margin-bottom: 27px;
+}
+
+.outer-container {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.sidebar {
+    display: flex;
+}
+
+.sidebar h4 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+ul {
+    font-size: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 41px;
+    font-size: 2em;
+    color: #DB6516;
+}
+
+.align {
+    margin-left: -6px;
+}
+
+.sidebarLine {
+    border: 1px solid #968787;
+    margin-left: 60px;
+    margin-top: 34px;
+}
+
+.basicInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionOne {
+    display: flex;
+    align-items: center;
+    margin-left: 58px;
+    margin-top: 58px;
+    width: 1100px;
+    height: 172px;
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+}
+
+.name {
+    margin-left: 32px;
+    font-size: 10px;
+    color: #F1F0F2;
+}
+
+.name h2 {
+    font-size: 3.6em;
+}
+
+.name h4 {
+    margin-top: -26px;
+    font-size: 2em;
+}
+
+.sectionOne img {
+    border-radius: 54px;
+    margin-left: 54px;
+}
+
+.verticalLine {
+    width: 72px;
+    height: 0px;
+    border: 2px solid #E5E5E5;
+    transform: rotate(90deg);
+}
+
+#searchBreeds {
+    margin-left: 24px;
+    background: #DB6516;
+}

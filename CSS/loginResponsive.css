@@ -2,7 +2,7 @@
 
 @media (min-width:320px) and (max-width:767px) {
 
-    .padding{
+    .padding {
         padding: 20px 0px;
     }
 
@@ -95,7 +95,7 @@
         font-size: 3em;
     }
 
-    #signInform{
+    #signInform {
         font-size: 5px;
         margin-bottom: 9%;
     }
@@ -106,19 +106,19 @@
         width: 100%;
     }
 
-    #forgotPass{
+    #forgotPass {
         margin: 5px 0px 16px 0px;
     }
 
-    #notRegistered{
+    #notRegistered {
         margin: 10px 0px 12px 0px;
     }
 
-    .otp h6{
+    .otp h6 {
         font-size: 10px;
     }
 
-    .otp{
+    .otp {
         margin: 10px;
     }
 
@@ -128,20 +128,22 @@
 
     /* Sign up form */
 
-    #signUpform{
+    #signUpform {
         font-size: 6px;
         margin-left: 32px;
     }
+
     #selectOne {
         font-size: 14px;
     }
 
-    #breeder, #owner{
+    #breeder,
+    #owner {
         height: 12px !important;
         width: 5%;
     }
 
-    label{
+    label {
         margin: 8px 0px;
     }
 }
@@ -155,19 +157,19 @@
         border-radius: 95px 0px 0px 95px;
     }
 
-    .formDivHeader{
+    .formDivHeader {
         font-size: 7px;
     }
 
-    #signInform{
+    #signInform {
         font-size: 10px;
     }
 
-    #signIn{
+    #signIn {
         font-size: 2em;
     }
 
-    label{
+    label {
         font-size: 1.5em;
     }
 
@@ -176,35 +178,36 @@
         margin: 12px 0px;
     }
 
-    input,button{
+    input,
+    button {
         font-size: 1.5em !important;
     }
 
-    #notRegistered{
+    #notRegistered {
         font-size: 1.5em;
         margin: 12px 0px;
     }
 
-    .otp{
+    .otp {
         margin: 5px;
     }
 
-    .otp h6{
+    .otp h6 {
         font-size: 10px;
     }
 
     /* Signup Form */
-    #selectOne{
+    #selectOne {
         font-size: 12px;
     }
 }
 
-@media (min-width:1920px){
+@media (min-width:1920px) {
     #imgContainer img {
         height: auto;
     }
 
-    .loginFormDiv{
+    .loginFormDiv {
         width: 1000px;
     }
 

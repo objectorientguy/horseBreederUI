@@ -1,15 +1,14 @@
 <!-- Sign in form -->
 <form action="" id="signInform">
     <h3 id="signIn">Sign in</h3>
-    <label for="lblEmail">Email Address</label><br><input type="email" name="email"
-        id="email"><br><br>
-    <label for="lblPassword">Password</label><br><input type="password" name="password"
-        id="password">
+    <label for="lblEmail">Email Address</label><br><input type="email" name="email" id="email"><br><br>
+    <label for="lblPassword">Password</label><br><input type="password" name="password" id="password">
     <a href="">
         <h6 id="forgotPass">Forgot Password?</h6>
     </a>
     <!-- Button1 -->
-    <button id="signInbutton"> <a href="landingPage.html" style="color:#ffffff ;">Sign in</a></button>
+
+    <button id="signInbutton" type="button">Sign in</button>
     <h6 id="notRegistered">Not Registered yet? &nbsp;<a href="#" id="createAccount">Create an
             account</a>
     </h6>
@@ -20,7 +19,7 @@
         <div class="line"></div>
     </div>
     <!-- Button2 -->
-    <button id="otpButton">Receive an OTP</button>
+    <button id="otpButton" type="button">Receive an OTP</button>
 </form>
 
 <script>
@@ -31,13 +30,22 @@
         $("#formContainer").load("signUp.html");
     })
 
-    $( "#signInbutton" ).click(function() {
-    $( "#signInbutton" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
-  });
+    // Changes the background color of the button when clicked 
+    var signIn = document.getElementById('signInbutton');
+    signIn.addEventListener('click', () => {
+        signIn.style.background = 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)';
+        setInterval(() => {
+            signIn.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
+        }, 100);
+        window.location = 'landingPage.html';
+    });
 
-  $( "#otpButton" ).click(function() {
-    $( "#otpButton" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
-  });
 
-  
+    var otpButton = document.getElementById('otpButton');
+    otpButton.addEventListener('click', () => {
+        otpButton.style.background = 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)';
+        setInterval(() => {
+            otpButton.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
+        }, 100);
+    })
 </script>

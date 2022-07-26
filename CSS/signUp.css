@@ -39,7 +39,7 @@ label {
 #signUpform button {
     height: 42px;
     width: 48%;
-    font-size: 2.4em;
+    font-size: 2.2em;
     padding: 5px;
     font-family: 'Open Sans', sans-serif;
     border-radius: 6px;
@@ -66,7 +66,8 @@ label {
     border: 1px solid #DB6516;
 }
 
-#breeder,#owner{
+#breeder,
+#owner {
     accent-color: #DB6516;
 }
 
@@ -81,16 +82,16 @@ label {
     margin-top: 24px;
 }
 
-#backTologin{
+#backTologin {
     background: #FFFFFF;
     color: #DB6516;
 }
 
-#backTologin:hover{
+#backTologin:hover {
     box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
 }
 
-#createAcc{
+#createAcc {
     background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
     color: #FFFFFF;
 }

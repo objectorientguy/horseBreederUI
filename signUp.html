@@ -26,7 +26,7 @@
     </div>
 </form>
 <link rel="stylesheet" href="CSS/signUp.css">
-<link rel="stylesheet" href="CSS/loginResponsive.css">
+<link rel="stylesheet" href="CSS/responsive.css">
 <script>
     // Loads Sign in form when clicked on 'Back' button.
     var backTologin = document.getElementById('backTologin');
@@ -35,7 +35,12 @@
         $("#formContainer").load("signIn.html");
     })
 
-  $( "#createAcc" ).click(function() {
-    $( "#createAcc" ).css('background', 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)');
-  });
+    var createAccountButton = document.getElementById('createAcc');
+    createAccountButton.addEventListener('click', () => {
+        createAccountButton.style.background = 'linear-gradient(89.17deg, #763C15 0%, #CF7009 100%)';
+        setInterval(() => {
+            createAccountButton.style.background = 'linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%)';
+        }, 100);
+    })
+    
 </script>

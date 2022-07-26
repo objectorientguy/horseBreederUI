@@ -1,8 +1,8 @@
 #navBar {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 24px 70px 0px 70px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 24px 48px 0px 48px;
 }
 
 #brandLogo {
@@ -15,9 +15,52 @@
 #brandName {
     font-size: 3em;
     margin-bottom: 20px;
+    margin-right: 48px;
     display: flex;
     justify-content: center;
     align-items: baseline;
+    color: #473A2E;
+    ;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ulHolder {
+    display: flex;
+}
+
+#navUl {
+    display: flex;
+}
+
+#navUl li {
+    margin-right: 48px;
+    list-style: none;
+    font-size: 24px;
+}
+
+#navUl li a {
+    text-decoration: none;
+    color: #696161;
+}
+
+#navUl li a:hover {
+    color: #DB6516;
+    cursor: pointer;
+}
+
+.vertical {
+    border: 1px solid #968787;
+}
+
+.userButtons {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-evenly;
+}
+
+.userButtons:hover {
+    cursor: pointer;
 }
 
 button {
@@ -31,17 +74,37 @@ button {
 }
 
 @media (min-width:768px) and (max-width:1023px) {
+
+    #navBar {
+        padding: 24px 8px 0px 8px;
+        flex-direction: column;
+    }
+
     #brandName {
         font-size: 1.5em;
+        margin-right: 0px;
     }
 
     #brandLogo {
         height: 18px;
         width: 18px;
     }
+
+    #navUl li {
+        font-size: 16px !important;
+    }
+
+    .userbuttonImages {
+        width: 20%;
+    }
 }
 
 @media(min-width:1024px) and (max-width:1439px) {
+
+    #navBar {
+        flex-direction: column;
+    }
+
     #brandName {
         font-size: 2em;
     }
