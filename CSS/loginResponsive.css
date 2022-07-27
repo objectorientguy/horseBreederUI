@@ -94,12 +94,11 @@
     #signInform {
         font-size: 5px;
         margin-bottom: 9%;
+        width: 400px;
     }
 
-    button,
-    input {
-        height: 32px !important;
-        width: 100%;
+    #signInform button {
+        font-size: 2.8em;
     }
 
     #forgotPass {
@@ -122,7 +121,7 @@
     }
 
     .line {
-        width: 80px;
+        width: 36%;
     }
 
     /* Sign up form */
@@ -130,25 +129,12 @@
     #signUpform {
         font-size: 6px;
         margin-left: 32px;
+        width: 400px;
     }
 
-    #firstName,
-    #lastName {
-        width: 133px !important;
-    }
-
-    #email,
-    #contactNumber {
-        width: 300px !important;
-    }
 
     #selectOne {
-        font-size: 14px;
-    }
-
-    .optionHolder {
-        height: 32px;
-        width: 298px;
+        font-size: 16px;
     }
 
     #breeder,
@@ -162,10 +148,15 @@
     }
 
     #signUpform button {
-        width: 40%;
-        margin-right: 16px;
-        margin-left: 8px;
-        font-size: 1.8em;
+        font-size: 2.3em;
+    }
+
+    #signUpform button, #signUpform input{
+        height: 42px;
+    }
+
+    .optionHolder{
+        height: 42px;
     }
 }
 
@@ -180,10 +171,16 @@
 
     #signInform {
         font-size: 10px;
+        width: 500px;
     }
 
     #brandName {
         font-size: 3.4em !important;
+    }
+
+    #signUp {
+        margin-top: 8px;
+        font-size: 30px;
     }
 
     label {
@@ -193,12 +190,6 @@
     #forgotPass {
         font-size: 1.2em;
         margin: 12px 8px;
-    }
-
-    input,
-    button {
-        font-size: 1.5em !important;
-        width: 398px !important;
     }
 
     #notRegistered {
@@ -216,7 +207,7 @@
     }
 
     .line {
-        width: 138px;
+        width: 38%;
     }
 
     .otp h6 {
@@ -224,23 +215,17 @@
     }
 
     /* Signup Form */
+
+    #signUpform {
+        width: 500px;
+    }
+
+    #signUpform button, #signUpform input{
+        height: 42px !important;
+    }
+
     #selectOne {
-        font-size: 15px;
-    }
-
-    #firstName,
-    #lastName {
-        width: 181px !important;
-    }
-
-    #email,
-    #contactNumber {
-        width: 398px !important;
-    }
-
-    .optionHolder {
-        width: 398px;
-        height: 52px;
+        font-size: 20px;
     }
 
     #breeder,
@@ -248,10 +233,16 @@
         font-size: 16px;
     }
 
-   #signUpform button {
-        width: 180px !important;
-        margin-right: 32px !important;
-        margin-left: 6px !important;
+    #signUpform button {
+       font-size: 1.6em;
+    }
+
+    .optionHolder{
+        height: 42px;
+    }
+
+    .buttonContainer {
+        margin-top: 48px;
     }
 }
 
