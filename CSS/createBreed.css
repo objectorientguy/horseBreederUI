@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
@@ -9,6 +9,10 @@ body {
 
 button {
     font-size: 16px;
+}
+
+hr{
+    opacity: 1;
 }
 
 .givePadding {
@@ -48,6 +52,7 @@ button {
 
 .card-body h2 {
     font-size: 3.6em;
+    font-weight: 700;
 }
 
 .card-body a {
@@ -60,10 +65,12 @@ button {
 
 .moreBreeds a {
     text-decoration: none;
+    font-weight: 600;
 }
 
 .moreBreeds:hover {
     background-color: #F1F0F2;
+    border-radius: 0.375rem;
     color: #473A2E;
 }
 
@@ -74,7 +81,6 @@ button {
 }
 
 .steps {
-    margin-left: 10px;
     margin-bottom: 40px;
     font-size: 10px;
 }
@@ -85,6 +91,7 @@ button {
 
 .steps h3 {
     font-size: 3.6em;
+    font-weight: 700;
 }
 
 /* Step 2 */
@@ -94,15 +101,20 @@ button {
 }
 
 .formContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto repeat(5, 1fr);
-    gap: 10px 30px;
-    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 label {
     font-size: 24px;
+    margin-bottom: 13px;
+    font-weight: 700;
 }
 
 #dropdownButton {
@@ -116,7 +128,6 @@ label {
 }
 
 #dropdownButton:focus,
-#dobInput:focus,
 textarea:focus,
 input:focus {
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
@@ -142,17 +153,19 @@ input:focus {
     width: 126px;
 }
 
+#breedName, #collarId{
+    color: #696161;
+}
+
 .uploadPicture {
     width: 511px;
     height: 323px;
+    margin-top: 24px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     border-radius: 15px;
     border: 1px solid #DB6516;
-    grid-row-start: 2;
-    grid-row-end: 7;
-    grid-column-start: 3;
 }
 
 .uploadLogo {
@@ -176,6 +189,7 @@ input:focus {
     height: 61px;
     background: #FFFFFF;
     color: #DB6516;
+    font-weight: 700;
     border-radius: 15px;
     border: 1px solid #DB6516;
 }
@@ -193,11 +207,9 @@ input {
 
 textarea {
     padding: 10px;
+    height: 179px;
     border-radius: 15px;
     border: 1px solid #DB6516;
-    grid-row-start: 4;
-    grid-row-end: 7;
-    grid-column-start: 2;
 }
 
 #saveBreed {
@@ -209,6 +221,7 @@ textarea {
 #saveBreed button {
     font-size: 24px;
     width: 600px;
+    font-weight: 700;
 }
 
 #saveBreed button:hover {
@@ -365,10 +378,13 @@ textarea {
 /* Responsive CSS */
 @media (min-width:768px) and (max-width:1023px) {
 
+    .userbuttonImages {
+        width: 15%;
+        margin-top: -12px !important;
+    }
+
     .formContainer {
-        grid-template-columns: repeat(1, 1fr) !important;
-        grid-template-rows: auto repeat(13, 1fr) !important;
-        row-gap: 20px;
+        flex-direction: column;
     }
 
     .cardContainer {
@@ -379,64 +395,27 @@ textarea {
         margin-bottom: 24px;
     }
 
+    .moreBreeds {
+        height: 174px;
+    }
+
+    .card-body h2 {
+        font-size: 3em;
+    }
+
     .steps {
         font-size: 9px;
         text-align: center;
     }
 
     label {
-        font-size: 36px;
+        font-size: 24px;
         text-align: center;
+        margin: 24px 0px;
     }
 
-    #dropdownButton {
-        grid-row: 2;
-    }
-
-    #dob {
-        grid-row: 3;
-    }
-
-    #dateOfbirth {
-        grid-row: 4;
-    }
-
-    #breedName {
-        grid-row: 5;
-    }
-
-    #breednameInput {
-        grid-row: 6;
-    }
-
-    #collarId {
-        grid-row: 7;
-    }
-
-    #collarIdInput {
-        grid-row: 8;
-    }
-
-    #about {
-        grid-row: 9;
-    }
-
-    #aboutText {
-        grid-row-start: 10;
-        grid-row-end: 12;
-        grid-column: 1;
-    }
-
-    #proPic {
-        grid-row: 12;
-    }
-
-    .uploadPicture {
-        grid-row-start: 13;
-        grid-row-end: 15;
-        grid-column: 1;
-        margin-right: auto;
-        margin-left: auto;
+    .column {
+        align-items: center;
     }
 
     #dropdownButton,
@@ -447,6 +426,10 @@ textarea {
         margin-left: auto;
         display: block;
         height: 60px;
+    }
+
+    #aboutText {
+        width: 378px;
     }
 
     #uploadPopup-container {
@@ -470,17 +453,19 @@ textarea {
     #interest {
         left: 26%;
     }
-
 }
 
 @media(min-width:1024px) and (max-width:1439px) {
 
-    .formContainer {
-        grid-template-columns: repeat(2, 1fr) !important;
-        grid-template-rows: auto repeat(7, 1fr) !important;
-        row-gap: 20px;
+    .userbuttonImages {
+        width: 21% !important;
+        margin-top: -8px !important;
     }
 
+    .formContainer {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
     .cardContainer {
         justify-content: space-evenly;
@@ -488,6 +473,10 @@ textarea {
 
     .card {
         margin-bottom: 24px;
+    }
+
+    .moreBreeds {
+        height: 174px;
     }
 
     .steps {
@@ -498,35 +487,22 @@ textarea {
         font-size: 20px;
     }
 
+    #about{
+        margin-top: 24px;
+    }
+
+    #dateOfbirth{
+        margin-top: 18px;
+    }
+
+    #columnThree {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 48px;
+    }
+
     #proPic {
-        grid-row: 5;
-    }
-
-    .uploadPicture {
-        grid-row-start: 6;
-        grid-row-end: 9;
-        grid-column-start: 2;
-    }
-
-    #collarId {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    #collarIdInput {
-        grid-row: 4;
-        grid-column: 2;
-    }
-
-    #about {
-        grid-row: 5;
-        grid-column: 1;
-    }
-
-    textarea {
-        grid-row-start: 6;
-        grid-row-end: 9;
-        grid-column-start: 1;
+        text-align: center;
     }
 
     #saveBreed {
@@ -554,6 +530,6 @@ textarea {
     #dayInput,
     #monthInput,
     #yearInput {
-        width: 116px;
+        width: 100px;
     }
 }

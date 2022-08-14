@@ -43,6 +43,7 @@ a {
 .sectionOne h4 {
     font-size: 6.4em;
     margin-top: 80px;
+    font-weight: 700;
 }
 
 .sectionOne button {
@@ -66,6 +67,7 @@ a {
 
 .description h4 {
     font-size: 6.4em;
+    font-weight: 700;
 }
 
 .description p {

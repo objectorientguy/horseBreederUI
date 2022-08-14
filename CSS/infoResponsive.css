@@ -1,0 +1,479 @@
+@media (min-width:768px) and (max-width:1023px) {
+    .outer-container {
+        padding: 0px;
+    }
+
+    .sidebarHolder {
+        width: 138px;
+    }
+
+    .leftPart {
+        font-size: 5px;
+    }
+
+    .sideBarImg {
+        width: 18%;
+    }
+
+    .align {
+        width: 26%;
+    }
+
+    #dustbin {
+        width: 11%;
+    }
+
+    #deleteButton {
+        width: 90%;
+        font-size: 10px;
+        height: 32px;
+        margin-left: 12px;
+    }
+
+    .sectionOne {
+        margin-left: 39px;
+        font-size: 4px;
+        height: 108px;
+    }
+
+    #animalImg {
+        width: 14%;
+    }
+
+    .name h4 {
+        margin-top: -10px;
+    }
+
+    .verticalLine {
+        width: 29px;
+    }
+
+    #magnifyingGlass {
+        width: 4%;
+    }
+
+    .sectionTwo {
+        font-size: 5px;
+        margin: 67px 0px 0px 32px;
+    }
+
+    .basicAbout {
+        height: auto;
+        margin-right: 26px;
+    }
+
+    .basicAbout div {
+        margin-left: 16px;
+    }
+
+    .editDiv {
+        margin: 41px 0px 319px -111px;
+    }
+
+    #editSpan img {
+        width: 34%;
+    }
+
+    .basicForm h1 {
+        margin-top: 24px;
+    }
+
+    .basicForm input,
+    .typeAbout input,
+    .parents input,
+    .profileForm input,
+    .changePassword input {
+        width: 150px;
+        height: 22px;
+    }
+
+    #dateOfbirth input {
+        width: 33px;
+        font-size: 12px;
+    }
+
+    .basicForm button {
+        margin: 24px 0px 34px 0px;
+        font-size: 16px;
+        padding: 0px;
+        height: 32px;
+    }
+
+    .typeAbout {
+        margin: 16px 0px 0px 0px;
+    }
+
+    .parents .editDiv {
+        margin: -52px 0px 0px -440px;
+    }
+
+    .parents {
+        height: 150px;
+    }
+
+    #saveParentsInfoButton,
+    .gallery button {
+        padding: 0px;
+        font-size: 16px;
+        height: 32px;
+        width: 150px;
+        margin-top: 0px;
+    }
+
+    .transferForm {
+        flex-wrap: wrap;
+    }
+
+    #transferH1 {
+        margin-top: 24px;
+    }
+
+    .transferForm input {
+        height: 22px;
+    }
+
+    .transferForm textarea {
+        height: 62px;
+    }
+
+    .uploadDocument {
+        margin-top: 24px;
+    }
+
+    .tickPara {
+        font-size: 13px;
+    }
+
+    .tickBox {
+        width: 90%;
+        margin: 48px 0px 0px 99px;
+    }
+
+    .tickBox img {
+        height: 18px;
+    }
+
+    #proceedButton {
+        margin: 32px auto 48px 101px;
+        font-size: 18px;
+    }
+
+    .uploadPicture {
+        width: 380px;
+    }
+
+    .uploadLogo {
+        width: 216px;
+    }
+
+    .uploadPicture button {
+        width: 216px;
+        font-size: 18px;
+    }
+
+    #uploadPopup-container {
+        width: 423px;
+        height: 336px;
+        left: 28%;
+    }
+
+    .upload-popup {
+        width: 234px;
+        height: 179px;
+    }
+
+    .upload-popup img {
+        width: 30%;
+    }
+
+    .upload-popup h4 {
+        font-size: 11px;
+    }
+
+    .gallery h1 {
+        font-size: 3.2em;
+    }
+
+    .galleryHead {
+        margin-top: 24px;
+        width: 78%;
+    }
+
+    .galleryImages img,
+    .galleryVideos img {
+        width: 26%;
+        margin: 24px 36px 0px 0px;
+    }
+
+    #addContact {
+        font-size: 16px;
+    }
+
+    #addContact img {
+        width: 15%;
+    }
+
+    .contacts h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 6px;
+        border-spacing: 0px 12px;
+    }
+
+    .emailOfContact {
+        margin-bottom: 16px;
+    }
+
+    .emailOfContact img {
+        width: 50%;
+    }
+
+    .separator {
+        height: 13px;
+    }
+
+    .proSectionOne {
+        margin: 24px 0px 0px 39px;
+        ;
+    }
+
+    .proSideNav {
+        width: 125px;
+    }
+
+    .proSideNav a {
+        font-size: 8px;
+        margin: 16px 0px 32px 32px;
+    }
+
+    .proSectionOne .editDiv {
+        margin: 0px 0px 347px -125px;
+    }
+
+    .proFormAbout {
+        margin: 0px 0px 16px 0px;
+    }
+
+    .profileForm button,
+    .changePassword button {
+        font-size: 16px;
+        padding: 0px;
+        height: 32px;
+    }
+
+    .changePassword button {
+        width: 150px;
+    }
+
+    .animalName img {
+        margin-bottom: -8px;
+    }
+
+    .status img {
+        width: 40%;
+    }
+
+    .status button {
+        width: 120px;
+        font-size: 10px;
+        height: 32px;
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1439px) {
+
+    .outer-container {
+        padding: 0px;
+    }
+
+    .leftPart {
+        font-size: 7px;
+    }
+
+    .sidebarHolder {
+        width: 174px;
+    }
+
+    #deleteButton {
+        width: 90%;
+        height: 42px;
+        margin-left: 18px;
+        font-size: 14px;
+    }
+
+    .sectionOne {
+        font-size: 6px;
+        height: 122px;
+    }
+
+    #animalImg {
+        width: 10%;
+    }
+
+    .name h4 {
+        margin-top: -15px;
+    }
+
+    .verticalLine {
+        width: 44px;
+    }
+
+    .sectionTwo {
+        font-size: 7px;
+    }
+
+    .basicAbout {
+        height: auto;
+        margin-right: 34px;
+    }
+
+    .basicAbout div {
+        margin-left: 18px;
+    }
+
+    .editDiv {
+        margin: 0px 0px 352px -125px;
+    }
+
+    #editSpan img {
+        width: 30%;
+    }
+
+    .basicForm input,
+    .typeAbout input,
+    .parents input,
+    .profileForm input,
+    .changePassword input {
+        width: 250px;
+    }
+
+    #dateOfbirth input {
+        width: 64px;
+    }
+
+    .basicForm button {
+        margin: 13px 0px 25px 0px;
+    }
+
+    #saveParentsInfoButton {
+        height: 42px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .typeAbout {
+        margin: 11px 0px 0px 0px;
+    }
+
+    .parents .editDiv {
+        margin: -64px 0px 0px -440px;
+    }
+
+    .transferForm input {
+        width: 150px;
+    }
+
+    .uploadPicture {
+        width: 411px;
+    }
+
+    .uploadLogo {
+        width: 316px;
+    }
+
+    .uploadPicture button {
+        width: 316px;
+        font-size: 20px;
+    }
+
+    #uploadPopup-container {
+        width: 623px;
+        height: 436px;
+    }
+
+    .upload-popup {
+        width: 434px;
+        height: 279px;
+    }
+
+    .upload-popup h4 {
+        font-size: 20px;
+    }
+
+    .tickBox {
+        margin: 0px;
+        justify-content: center;
+    }
+
+    #proceedButton {
+        margin: 32px auto 48px auto;
+    }
+
+    .galleryHead {
+        width: 85%;
+    }
+
+    .galleryImages img,
+    .galleryVideos img {
+        width: 20%;
+    }
+
+    #addContact {
+        font-size: 16px;
+    }
+
+    #addContact img {
+        width: 15%;
+    }
+
+    .contacts h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 8px;
+        border-spacing: 0px 12px;
+    }
+
+    .emailOfContact img {
+        width: 70%;
+    }
+
+    .separator {
+        height: 24px;
+    }
+
+    .proSectionOne {
+        margin: 24px 0px 0px 39px;
+        ;
+    }
+
+    .proSideNav a {
+        font-size: 12px;
+        margin: 16px 0px 24px 32px;
+    }
+
+    .proSectionOne .editDiv {
+        margin: 0px 0px 441px -162px;
+    }
+
+    .profileForm button,
+    .changePassword button {
+        font-size: 16px;
+    }
+
+    .changePassword button {
+        width: 250px;
+    }
+
+    .status img {
+        width: 65%;
+    }
+
+    .status button {
+        height: 38px;
+    }
+}

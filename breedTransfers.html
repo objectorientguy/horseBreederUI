@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breed Transfers</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/basicInfo.css">
+    <link rel="stylesheet" href="CSS/infoResponsive.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navContainer">
+        <!-- Navbar will be loaded here through jQuery -->
+    </div>
+    <hr>
+    <!-- This container holds 2 parts -->
+    <div class="outer-container">
+        <!-- Left part - Sidenav -->
+        <div class="leftPart">
+            <div class="sidebarHolder proSideNav">
+                <h4>User Details</h4>
+                <a href="profileDetails.html"><img src="assets/images/basicInfo.png" alt="" class="sideBarImg"> &nbsp; Personal Info</a>
+                <a><img src="assets/images/parents.png" alt="" class="sideBarImg"> &nbsp; Animal Details</a>
+                <a><img src="assets/images/transfer.png" alt="" class="align sideBarImg"> &nbsp; Breed Transfer</a>
+                <a><img src="assets/images/transfer.png" alt="" class="align sideBarImg"> &nbsp; Change Password</a>
+            </div>
+            <div class="sidebarLine"></div>
+        </div>
+
+        <!-- Right Part - Info -->
+        <div class="rightPart">
+            <div class="sectionTwo transfers">
+                <div class="transfersHead">
+                    <h1>Transfers</h1>
+                    <span id="addContact"><img src="assets/images/addContact.png" alt="">&nbsp;My Requests</span>
+                </div>
+                <div class="table-container">
+                    <table>
+                            <tr>
+                                <th>Animal Name</th>
+                                <th>Transfer Date</th>
+                                <th>Transfer Person</th>
+                                <th>Status</th>
+                            </tr>
+                        <tr>
+                            <td class="animalName"><img src="assets/images/1629227215_468486_url 1.png" alt="">&nbsp;&nbsp;Shining Star</td>
+                            <td>12th July,22</td>
+                            <td>Michelle</td>
+                            <td class="status"><button type="button">IN PROGRESS</button> <span><img src="assets/images/editContact.png" alt=""></span><div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span></td>
+                        </tr>
+                        <tr>
+                            <td class="animalName"><img src="assets/images/1629227215_468486_url 1.png" alt="">&nbsp;&nbsp;Shining Star</td>
+                            <td>12th July,22</td>
+                            <td>Michelle</td>
+                            <td class="status"><button type="button">IN PROGRESS</button> <span><img src="assets/images/editContact.png" alt=""></span><div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span></td>
+                        </tr>
+                        <tr>
+                            <td class="animalName"><img src="assets/images/1629227215_468486_url 1.png" alt="">&nbsp;&nbsp;Shining Star</td>
+                            <td>12th July,22</td>
+                            <td>Michelle</td>
+                            <td class="status"><button type="button">IN PROGRESS</button> <span><img src="assets/images/editContact.png" alt=""></span><div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#navContainer').load('navbar.html');
+
+        var addContact = document.getElementById('addContact');
+        addContact.addEventListener('click',()=>{
+            $('.transfers').empty();
+            $('.transfers').load('requests.html');
+        })
+        window.onload(window.open('changePassword.html','_blank'));
+    </script>
+</body>
+</html>

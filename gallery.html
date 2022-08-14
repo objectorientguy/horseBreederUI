@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/basicInfo.css">
+    <link rel="stylesheet" href="CSS/infoResponsive.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navContainer">
+        <!-- Navbar will be loaded here through jQuery -->
+    </div>
+    <hr>
+    <div class="outer-container">
+        <div class="leftPart">
+            <div class="sidebarHolder">
+                <h4>Breed Details</h4>
+                <a><img src="assets/images/basicInfo.png" alt="" class="sideBarImg"> &nbsp; Basic Info</a>
+                <a><img src="assets/images/parents.png" alt="" class="sideBarImg"> &nbsp; Parents</a>
+                <a><img src="assets/images/otherInfo.png" alt="" class="sideBarImg"> &nbsp; Other Info</a>
+                <a><img src="assets/images/gallery.png" alt="" class="sideBarImg"> &nbsp; Gallery</a>
+                <a><img src="assets/images/appointments.png" alt="" class="sideBarImg"> &nbsp; Appointments</a>
+                <a><img src="assets/images/notes.png" alt="" class="sideBarImg"> &nbsp; Notes</a>
+                <a><img src="assets/images/food.png" alt="" class="align sideBarImg"> &nbsp; Food</a>
+                <a><img src="assets/images/contacts.png" alt="" class="sideBarImg"> &nbsp; Contacts</a>
+                <a><img src="assets/images/transfer.png" alt="" class="align sideBarImg"> &nbsp; Transfer</a>
+                <button id="deleteButton"><img src="assets/images/deleteGrey.png" id="dustbin" class="sideBarImg">&nbsp;
+                    Delete
+                </button>
+
+            </div>
+            <div class="sidebarLine"></div>
+        </div>
+        <div class="rightPart">
+            <div class="sectionOne">
+                <img src="assets/images/welsh-pony-running-standing-high-260nw-1175510683 1.png" alt="" id="animalImg">
+                <div class="name">
+                    <h2>Shining Star</h2>
+                    <h4>Type of Breed</h4>
+                </div>
+
+                <div class="verticalLine"></div>
+                <img src="assets/images/search.png" alt="" id="magnifyingGlass">
+                <input type="text" name="searchBreeds" id="searchBreeds" placeholder="Search your breeds">
+            </div>
+
+            <div class="sectionTwo gallery  ">
+                <div class="galleryHead">
+                    <h1>Gallery</h1>
+                    <button type="button">Upload </button>
+                </div>
+                <div class="imagesAndVideos">
+                    <label for="photos">Photos</label>
+                    <div class="galleryImages">
+                        <img src="assets/images/galleryImg1.png" alt="">
+                        <img src="assets/images/galleryImg2.png" alt="">
+                        <img src="assets/images/galleryImg3.png" alt="">
+                        <img src="assets/images/galleryImg4.png" alt="">
+                        <img src="assets/images/galleryImg5.png" alt="">
+                        <img src="assets/images/galleryImg1.png" alt="">
+                        <img src="assets/images/galleryImg2.png" alt="">
+                        <img src="assets/images/galleryImg3.png" alt="">
+                        <img src="assets/images/galleryImg4.png" alt="">
+                        <img src="assets/images/galleryImg5.png" alt="">
+                    </div>
+                    <label for="videos">Videos</label>
+                    <div class="galleryVideos">
+                        <img src="assets/images/galleryImg1.png" alt="">
+                        <img src="assets/images/galleryImg2.png" alt="">
+                        <img src="assets/images/galleryImg3.png" alt="">
+                        <img src="assets/images/galleryImg4.png" alt="">
+                        <img src="assets/images/galleryImg5.png" alt="">
+                        <img src="assets/images/galleryImg1.png" alt="">
+                        <img src="assets/images/galleryImg2.png" alt="">
+                        <img src="assets/images/galleryImg3.png" alt="">
+                        <img src="assets/images/galleryImg4.png" alt="">
+                        <img src="assets/images/galleryImg5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#navContainer').load('navbar.html');
+
+        var deleteButton = document.getElementById('deleteButton');
+        var dustbin = document.getElementById('dustbin');
+        deleteButton.addEventListener('mousedown', () => {
+            deleteButton.style.border = '1px solid rgba(196, 23, 23, 1)';
+            deleteButton.style.color = 'rgba(196, 23, 23, 1)';
+            dustbin.src = 'assets/images/deleteRed.png';
+        })
+
+        deleteButton.addEventListener('mouseup', () => {
+            deleteButton.style.border = '1px solid #696161';
+            deleteButton.style.color = ' #696161';
+            dustbin.src = 'assets/images/deleteGrey.png';
+        })
+
+        window.onload(window.open('contactList.html','_blank'));
+    </script>
+</body>
+</html>

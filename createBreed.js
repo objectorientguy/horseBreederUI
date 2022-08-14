@@ -79,20 +79,42 @@ function closeBox(button, targetBox) {
     })
 }
 
+//Change card image on hover
+var  horseBreed = document.getElementById('horseBreed');
+var dogBreed = document.getElementById('dogBreed');
+var horseBreedImg = document.getElementById('horseBreedImg');
+var dogBreedImg = document.getElementById('dogBreedImg');
+
+horseBreed.addEventListener('mouseover',()=>{
+    horseBreedImg.src = 'assets/images/breed-horse-selected.png';
+})
+
+horseBreed.addEventListener('mouseout',()=>{
+    horseBreedImg.src = 'assets/images/breeed-horse-deselected.png';
+})
+
+dogBreed.addEventListener('mouseover',()=>{
+    dogBreedImg.src = 'assets/images/breed-dog-selected.png'
+})
+
+dogBreed.addEventListener('mouseout',()=>{
+    dogBreedImg.src = 'assets/images/breed-dog-deselected.png'
+})
+
 // Validations
-var saveyourbreedButton = document.getElementById('saveyourbreedButton');
+// var saveyourbreedButton = document.getElementById('saveyourbreedButton');
 
-saveyourbreedButton.addEventListener('click',validateForm);
+// saveyourbreedButton.addEventListener('click',validateForm);
 
-function validateForm(){
-    // Date validations
-var dayInput = document.getElementById('dayInput');
-var monthInput = document.getElementById('monthInput');
-var yearInput = document.getElementById('yearInput');
-if(dayInput.value==''||monthInput.value==''||yearInput.value==''){
-    console.log('date cant be empty');
-}
-}
+// function validateForm(){
+//     // Date validations
+// var dayInput = document.getElementById('dayInput');
+// var monthInput = document.getElementById('monthInput');
+// var yearInput = document.getElementById('yearInput');
+// if(dayInput.value==''||monthInput.value==''||yearInput.value==''){
+//     console.log('date cant be empty');
+// }
+// }
 
 // const breednameInput = document.getElementById('breednameInput');
 // breednameInput.addEventListener('keydown', function(event){

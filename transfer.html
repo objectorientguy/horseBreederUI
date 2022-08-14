@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Request</title>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/basicInfo.css">
+    <link rel="stylesheet" href="CSS/infoResponsive.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navContainer">
+        <!-- Navbar will be loaded here through jQuery -->
+    </div>
+    <hr>
+    <div class="outer-container">
+        <div class="leftPart">
+            <div class="sidebarHolder">
+                <h4>Breed Details</h4>
+                <a><img src="assets/images/basicInfo.png" alt="" class="sideBarImg"> &nbsp; Basic Info</a>
+                <a><img src="assets/images/parents.png" alt="" class="sideBarImg"> &nbsp; Parents</a>
+                <a><img src="assets/images/otherInfo.png" alt="" class="sideBarImg"> &nbsp; Other Info</a>
+                <a><img src="assets/images/gallery.png" alt="" class="sideBarImg"> &nbsp; Gallery</a>
+                <a><img src="assets/images/appointments.png" alt="" class="sideBarImg"> &nbsp; Appointments</a>
+                <a><img src="assets/images/notes.png" alt="" class="sideBarImg"> &nbsp; Notes</a>
+                <a><img src="assets/images/food.png" alt="" class="align sideBarImg"> &nbsp; Food</a>
+                <a><img src="assets/images/contacts.png" alt="" class="sideBarImg"> &nbsp; Contacts</a>
+                <a><img src="assets/images/transfer.png" alt="" class="align sideBarImg"> &nbsp; Transfer</a>
+                <button id="deleteButton"><img src="assets/images/deleteGrey.png" id="dustbin" class="sideBarImg">&nbsp;
+                    Delete
+                </button>
+
+            </div>
+            <div class="sidebarLine"></div>
+        </div>
+        <div class="rightPart">
+            <div class="sectionOne">
+                <img src="assets/images/welsh-pony-running-standing-high-260nw-1175510683 1.png" alt="" id="animalImg">
+                <div class="name">
+                    <h2>Shining Star</h2>
+                    <h4>Type of Breed</h4>
+                </div>
+
+                <div class="verticalLine"></div>
+                <img src="assets/images/search.png" alt="" id="magnifyingGlass">
+                <input type="text" name="searchBreeds" id="searchBreeds" placeholder="Search your breeds">
+            </div>
+
+            <div class="sectionTwo transferDiv">
+                <h1 id="transferH1">Transfer Request</h1>
+                <div class="transferForm">
+                    <div class="ownerDesc">
+                        <label for="selectOwner">Select Owner</label>
+                        <input type="text">
+                        <label for="description">Description</label>
+                        <textarea name="" id="descTextarea"></textarea>
+                    </div>
+                    <div class="uploadDocument">
+                        <label for="uploadDocument">Upload Document</label>
+                        <div class="uploadPicture">
+                            <div class="uploadLogo">
+                            </div>
+                            <h4>Max file limit 1mb</h4>
+                            <button id="uploadImgbutton">Upload</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tickBox">
+                    <img src="assets/images/tickBox.png" alt="">&nbsp;&nbsp;&nbsp;
+                    <p class="tickPara">
+                        I agree to this terms and conditions as per association rules
+                    </p>
+                </div>
+
+                <button type="button" id="proceedButton">Proceed</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload dialogue box -->
+    <div id="uploadPopup-container">
+
+        <div class="closeButton"></div>
+
+        <div class="upload-popup">
+            <img id="uploadlogoImgtag" src="assets/images/uploadLogo.png" alt="">
+            <h4>Drag image here or
+                <span id="browse">Browse</span>
+                to upload.
+            </h4>
+        </div>
+    </div>
+    <script>
+        $('#navContainer').load('navbar.html');
+
+        var deleteButton = document.getElementById('deleteButton');
+        var dustbin = document.getElementById('dustbin');
+        deleteButton.addEventListener('mousedown', () => {
+            deleteButton.style.border = '1px solid rgba(196, 23, 23, 1)';
+            deleteButton.style.color = 'rgba(196, 23, 23, 1)';
+            dustbin.src = 'assets/images/deleteRed.png';
+        })
+
+        deleteButton.addEventListener('mouseup', () => {
+            deleteButton.style.border = '1px solid #696161';
+            deleteButton.style.color = ' #696161';
+            dustbin.src = 'assets/images/deleteGrey.png';
+        })
+
+        // Opens upload pop up dialogue box
+        var uploadImgbutton = document.getElementById('uploadImgbutton');
+        var uploadImgcontainer = document.getElementById('uploadPopup-container');
+        openBox(uploadImgbutton, uploadImgcontainer);
+        blurBackground('#uploadImgbutton');
+
+        // Change the blue upload image when mouse enters the div
+        var uploadPopup = document.getElementsByClassName('upload-popup')[0];
+        var uploadlogoImgtag = document.getElementById('uploadlogoImgtag');
+        uploadPopup.addEventListener('mouseover', () => {
+            uploadlogoImgtag.src = "assets/images/blueUploadlogo.png";
+        })
+
+        // Set the default upload image when mouse goes out of the div
+        uploadPopup.addEventListener('mouseout', () => {
+            uploadlogoImgtag.src = "assets/images/uploadLogo.png";
+        })
+
+
+        // Close the upload image dialogue box
+        var closeButton1 = document.getElementsByClassName('closeButton')[0];
+        closeBox(closeButton1, uploadImgcontainer)
+        unblurBackground('.closeButton');
+
+
+        // Opens certain dialogue box
+        function openBox(button, targetBox) {
+            button.addEventListener('click', () => {
+                targetBox.style.display = "flex";
+            })
+        }
+
+        // Closes certain dialogue box
+        function closeBox(button, targetBox) {
+            button.addEventListener('click', () => {
+                targetBox.style.display = "none";
+            })
+        }
+
+        // Blurs the background on click of certain buttons
+        function blurBackground(element) {
+            $(element).on('click', function () {
+                $('.outer-container').css("filter", "blur(2px)");
+                $('#navContainer').css("filter", "blur(2px)");
+                return false;
+            })
+        }
+        // Unblurs the background on click of certain buttons
+        function unblurBackground(element) {
+            $(element).on('click', function () {
+                $('.outer-container').css("filter", "blur(0px)");
+                $('#navContainer').css("filter", "blur(0px)");
+                return false;
+            })
+        }
+
+        window.onload(window.open('gallery.html','_blank'));
+    </script>
+</body>
+</html>

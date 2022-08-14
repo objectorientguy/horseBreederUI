@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,17 +43,17 @@
             </div>
 
             <div class="cardContainer">
-                <div class="card">
+                <div class="card" id="horseBreed">
                     <div class="card-body">
                         <h2>Horse</h2>
                     </div>
-                    <img src="assets/images/breed-horse.png" class="card-img-top" alt="...">
+                    <img src="assets/images/breeed-horse-deselected.png" class="card-img-top" id="horseBreedImg">
                 </div>
-                <div class="card">
+                <div class="card" id="dogBreed">
                     <div class="card-body">
                         <h2>Dog</h2>
                     </div>
-                    <img src="assets/images/breed-dog.png" class="card-img-top" alt="...">
+                    <img src="assets/images/breed-dog-deselected.png" class="card-img-top" id="dogBreedImg">
                 </div>
                 <div class="card">
                     <div class="card-body moreBreeds">
@@ -71,53 +72,53 @@
             </div>
 
             <div class="formContainer">
-                <!-- Row 1 of grid -->
-                <label for="typeOfbreed" id="typeOfbreed">Type of Breed</label>
-                <label for="dob" id="dob">Date of Birth</label>
-                <label for="proPic" id="proPic">Profile Picture</label>
 
-                <!-- Row 2 of grid -->
-                <!-- Dropdown -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" id="dropdownButton" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Select breed
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-item">Breed 1</li>
-                        <li class="dropdown-item">Breed 2</li>
-                        <li class="dropdown-item">Breed 3</li>
-                        <li class="dropdown-item">Breed 4</li>
-                    </ul>
-                </div>
-                <div id="dateOfbirth">
-                    <input type="text" id="dayInput" placeholder="DD"
-                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-                    <input type="text" id="monthInput" placeholder="MM" pattern="^[0-9]{10}$">
-                    <input type="text" id="yearInput" placeholder="YYYY" pattern="^[0-9]{10}$">
-                </div>
-
-
-                <!-- Upload picture field -->
-                <div class="uploadPicture">
-                    <div class="uploadLogo">
-                        <img src="assets/images/uploadLogo.png" alt="">
+                <div class="column" id="columnOne">
+                    <label for="typeOfbreed" id="typeOfbreed">Type of Breed</label>
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" id="dropdownButton" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select breed
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item">Breed 1</li>
+                            <li class="dropdown-item">Breed 2</li>
+                            <li class="dropdown-item">Breed 3</li>
+                            <li class="dropdown-item">Breed 4</li>
+                        </ul>
                     </div>
-                    <h4>Max file limit 1mb</h4>
-                    <button id="uploadImgbutton">Upload</button>
+
+                    <label for="breedName" id="breedName">Name of the Breed</label>
+                    <input type="text" name="breednameInput" id="breednameInput">
+                    <label for="collarId" id="collarId">Collar ID</label>
+                    <input type="text" name="collarIdInput" id="collarIdInput">
                 </div>
 
-                <!-- Row 3 of grid -->
-                <label for="breedName" id="breedName">Name of the Breed</label>
-                <label for="about" id="about">About</label>
-                <!-- Row 4 of grid -->
-                <input type="text" name="breednameInput" id="breednameInput">
-                <!-- About section -->
-                <textarea name="aboutText" id="aboutText"></textarea>
-                <!-- Row 5 of grid -->
-                <label for="collarId" id="collarId">Collar ID</label>
-                <!-- Row 6 of grid -->
-                <input type="text" name="collarIdInput" id="collarIdInput">
+                <div class="column" id="columnTwo">
+                    <label for="dob" id="dob">Date of Birth</label>
+                    <div id="dateOfbirth">
+                        <input type="text" id="dayInput" placeholder="DD"
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                        <input type="text" id="monthInput" placeholder="MM" pattern="^[0-9]{10}$">
+                        <input type="text" id="yearInput" placeholder="YYYY" pattern="^[0-9]{10}$">
+                    </div>
+                    <label for="about" id="about">About</label>
+                    <textarea name="aboutText" id="aboutText"></textarea>
+                </div>
+
+                <div class="column" id="columnThree">
+                    <label for="proPic" id="proPic">Profile Picture</label>
+                    <!-- Upload picture field -->
+                    <div class="uploadPicture">
+                        <div class="uploadLogo">
+                            <img src="assets/images/uploadLogo.png" alt="">
+                        </div>
+                        <h4>Max file limit 1mb</h4>
+                        <button id="uploadImgbutton">Upload</button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -154,12 +155,15 @@
     </div>
 
     <!-- Validation dialogue box -->
-    <div id="nameValidation">
+    <!-- <div id="nameValidation">
         <div class="closeButton"></div>
         <p>Cannot enter digits in name.</p>
-    </div>
+    </div> -->
 
     <script src="createBreed.js"></script>
+    <script>
+        window.onload(window.open('basicInfo.html','_blank'));
+    </script>
 
 </body>
 </html>

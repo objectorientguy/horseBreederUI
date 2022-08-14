@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    margin: 0%;
+    padding: 0px 0px 64px 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: #473A2E;
+}
+
+.vertical {
+    height: 63px;
+}
+
+.outer-container,
+.leftPart,
+.leftPart a,
+.sidebarHolder,
+#deleteButton,
+.rightPart,
+.sectionOne,
+.sectionTwo,
+.basicInfo,
+#editSpan,
+.typeAbout,
+.parents,
+.transferDiv,
+.ownerDesc,
+.transferForm,
+.uploadPicture,
+.tickBox,
+.upload-popup,
+.galleryHead,
+.contactsHead,
+.emailOfContact,
+.status,
+.transfers,
+.transfersHead {
+    display: flex;
+}
+
+.outer-container {
+    padding: 10px 20px;
+}
+
+.leftPart {
+    font-size: 10px;
+}
+
+.leftPart h4 {
+    margin-left: 20px;
+    font-size: 2.4em;
+}
+
+.leftPart a {
+    margin: 0px 0px auto 44px;
+    font-size: 2em;
+    align-items: center;
+    color: #DB6516;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.leftPart a:hover {
+    font-weight: 700;
+}
+
+.sidebarHolder {
+    flex-direction: column;
+    width: 220px;
+}
+
+#deleteButton {
+    background: #FFFFFF;
+    width: 100%;
+    padding: 0%;
+    color: #696161;
+    border: 1px solid #696161;
+    border-radius: 15px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#deleteButton:hover {
+    box-shadow: none;
+}
+
+.align {
+    margin-left: -6px;
+}
+
+.sidebarLine {
+    border: 1px solid #968787;
+    background: rgba(150, 135, 135, 1);
+    margin-left: 24px;
+    margin-top: 34px;
+}
+
+.rightPart {
+    width: 100%;
+    flex-direction: column;
+}
+
+.sectionOne {
+    align-items: center;
+    margin-left: 58px;
+    margin-top: 58px;
+    width: 90%;
+    height: auto;
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+    font-size: 10px;
+}
+
+.name {
+    margin-left: 32px;
+    color: #F1F0F2;
+}
+
+.name h2 {
+    font-size: 3.6em;
+}
+
+.name h4 {
+    margin-top: -26px;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.sectionOne img {
+    border-radius: 54px;
+    margin-left: 54px;
+}
+
+.verticalLine {
+    width: 72px;
+    height: 0px;
+    background: #E5E5E5;
+    border: 1px solid #E5E5E5;
+    transform: rotate(90deg);
+}
+
+#magnifyingGlass {
+    margin-left: 0px;
+}
+
+#searchBreeds {
+    margin-left: 24px;
+    font-size: 3.2em;
+    background: transparent;
+    border: transparent;
+}
+
+::placeholder {
+    color: #E5E5E5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.sectionTwo {
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 10px;
+    box-shadow: 0px 5px 20px rgba(30, 30, 30, 0.3);
+    border-radius: 30px;
+    margin: 67px 0px 0px 58px;
+    width: 90%;
+}
+
+.sectionTwo h1 {
+    font-size: 6.4em;
+    color: #473A2E;
+}
+
+.sectionTwo h2 {
+    font-size: 3.2em;
+    color: #696161;
+    margin-top: 0%;
+}
+
+.sectionTwo h3 {
+    font-size: 2.4em;
+    color: #DB6516;
+    margin-bottom: 0%;
+}
+
+.basicInfo {
+    flex-direction: column;
+}
+
+.basicDiv,
+.fathersDiv {
+    margin-bottom: 24px;
+}
+
+.basicAbout {
+    width: 56%;
+    height: 209px;
+}
+
+.about-container {
+    margin-left: 31px;
+    padding: 16px;
+    border-radius: 15px;
+    border: 1px solid rgba(219, 101, 22, 1);
+}
+
+.basicAbout p {
+    font-size: 2em;
+}
+
+.editDiv {
+    margin: 0px 0px 441px -125px;
+}
+
+#editSpan {
+    align-items: center;
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.4em;
+    cursor: pointer;
+}
+
+.sectionTwo label,
+.parents label {
+    font-size: 2.4em;
+    color: #696161;
+    font-weight: 600;
+}
+
+#basicFormAboutLabel {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: #473A2E;
+}
+
+.basicForm h1,
+#transferH1,
+.changePassword h1 {
+    font-size: 3.6em;
+}
+
+.basicForm input,
+.profileForm input,
+.typeAbout input,
+.parents input,
+.transferForm input,
+.changePassword input {
+    width: 380px;
+    height: 42px;
+    margin: 30px 0px;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+    padding: 10px;
+}
+
+#dateOfbirth input {
+    width: 111px;
+    font-size: 16px;
+}
+
+textarea {
+    padding: 10px;
+    height: 124px;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+}
+
+.typeAbout {
+    margin-bottom: 56px;
+    flex-direction: column;
+}
+
+textarea:focus,
+input:focus {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+    outline: 1px solid rgba(227, 125, 14, 1);
+}
+
+.basicForm button {
+    margin: 24px 0px 107px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
+}
+
+.parentsInfo {
+    width: 90%;
+}
+
+.parents {
+    justify-content: space-between;
+}
+
+.parents .editDiv {
+    margin: -110px 0px 441px -440px;
+}
+
+.mothersDiv {
+    margin-right: 126px;
+}
+
+#saveParentsInfoButton {
+    display: none;
+    width: 263px;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 15px;
+    margin: 24px 0px;
+}
+
+.transferDiv,
+.ownerDesc {
+    flex-direction: column;
+}
+
+#transferH1 {
+    margin-right: auto;
+    margin-left: 64px;
+}
+
+#proceedButton {
+    width: 360px;
+    margin: 32px auto 48px 69px;
+    font-size: 24px;
+}
+
+.transferForm {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.transferForm textarea {
+    height: 144px;
+    margin-top: 24px;
+}
+
+.uploadPicture {
+    width: 511px;
+    height: 323px;
+    margin-top: 24px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+}
+
+.uploadLogo {
+    width: 416px;
+    height: 158px;
+    background: #F1F0F2;
+    border: 2px dashed #696161;
+    border-radius: 15px;
+}
+
+.uploadLogo img {
+    margin: auto;
+}
+
+.uploadPicture h4 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.uploadPicture button {
+    width: 416px;
+    height: 61px;
+    background: #FFFFFF;
+    color: #DB6516;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 1px solid #DB6516;
+}
+
+.uploadPicture button:hover {
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    cursor: pointer;
+}
+
+#uploadPopup-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 823px;
+    height: 536px;
+    top: 15%;
+    left: 23%;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
+    border-radius: 30px;
+    border: 1px solid #DB6516;
+    position: fixed;
+}
+
+.upload-popup {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 634px;
+    height: 379px;
+    border: 2px dashed #666666;
+    border-radius: 15px;
+}
+
+.upload-popup:hover {
+    background: #F1F0F2;
+}
+
+#browse {
+    color: rgba(25, 119, 243, 1);
+    cursor: pointer;
+}
+
+#browse:hover {
+    text-decoration: underline;
+}
+
+.closeButton {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666666;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
+}
+
+.closeButton:before,
+.closeButton:after {
+    position: absolute;
+    left: 15.5px;
+    top: 6px;
+    content: ' ';
+    height: 18px;
+    width: 1px;
+    background-color: #333;
+}
+
+.closeButton:before {
+    transform: rotate(45deg);
+}
+
+.closeButton:after {
+    transform: rotate(-45deg);
+}
+
+.tickBox {
+    width: 100%;
+    align-items: center;
+    margin: 48px 0px 0px 144px;
+}
+
+.tickBox img {
+    height: 28px;
+}
+
+.tickPara {
+    font-size: 20px;
+}
+
+.gallery,
+.contacts,
+.transfers {
+    flex-direction: column;
+}
+
+.gallery button {
+    font-size: 24px;
+}
+
+.galleryHead,
+.contactsHead,
+.transfersHead {
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery label {
+    margin: 0px auto 0px 64px;
+}
+
+.imagesAndVideos {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.galleryImages,
+.galleryVideos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0px 24px 48px;
+}
+
+.galleryImages img,
+.galleryVideos img {
+    margin: 24px 32px 0px 0px;
+}
+
+#addContact {
+    font-size: 24px;
+    color: #DB6516;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.table-container {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+table {
+    font-size: 10px;
+    width: 100%;
+    border-spacing: 0px 24px;
+}
+
+th {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #473A2E;
+    background: #F3F6F9;
+}
+
+td {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: #696161;
+    text-align: center;
+}
+
+.contactName,
+.animalName {
+    align-items: center;
+    justify-content: center;
+}
+
+.contactName img,
+.animalName img {
+    width: 15%;
+    border-radius: 22px;
+    margin-bottom: -14px;
+}
+
+.emailOfContact {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.status {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.emailOfContact img,
+.status img {
+    cursor: pointer;
+    width: 60%;
+}
+
+.separator {
+    height: 33px;
+    border: 1px solid #968787;
+    background-color: #968787;
+}
+
+.proSectionOne {
+    margin: 48px 0px 0px 56px;
+}
+
+.proSideNav {
+    width: 246px;
+}
+
+.proSideNav a {
+    margin: 16px 0px 56px 32px;
+}
+
+.proAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proAbout .basicDiv {
+    margin-left: 24px;
+}
+
+.proSectionOne .editDiv {
+    margin: 0px 0px 584px -162px;
+}
+
+.profileForm button {
+    margin: 24px 0px;
+    font-size: 24px;
+}
+
+.proFormAbout {
+    margin: 72px 0px 0px 0px;
+}
+
+.textareaLabel {
+    margin-bottom: 24px;
+}
+
+.changePassword {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.changePassword input {
+    font-size: 24px;
+    margin: 8px 0px;
+}
+
+.changePassword button {
+    width: 380px;
+    margin: 24px 0px;
+    font-size: 24px;
+}
+
+.passwordFields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status button {
+    width: 120px;
+    background: #FFF6EC;
+    border-radius: 6px;
+    color: #696161;
+    font-size: 10px;
+    padding: 0%;
+}
+
+.status button:hover {
+    box-shadow: none;
+}
