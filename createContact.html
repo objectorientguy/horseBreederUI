@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Contact</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/basicInfo.css">
+    <link rel="stylesheet" href="CSS/infoResponsive.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navContainer">
+        <!-- Navbar will be loaded here through jQuery -->
+    </div>
+    <hr>
+
+    <div class="create-contact-form">
+        <div class="createContactForm">
+            <h1>Create Contact</h1>
+            <label for="firstName">First Name</label>
+            <input type="text">
+            <label for="e-mail">Email Address</label>
+            <input type="text">
+            <label for="about" class="textareaLabel">Profession</label>
+            <!-- Dropdown -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" id="dropdownButton" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    None
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">Profession 1</li>
+                    <li class="dropdown-item">Profession 2</li>
+                    <li class="dropdown-item">Profession 3</li>
+                    <li class="dropdown-item">Profession 4</li>
+                </ul>
+            </div>
+            <button type="button" id="saveContactButton">Save</button>
+        </div>
+
+        <div class="createContactAbout">
+            <label for="lastName">Last Name</label>
+            <input type="text">
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel">
+            <label for="about" class="textareaLabel">About/Description</label>
+            <textarea name="profileFormTextarea" class="profileFormTextarea"></textarea>
+        </div>
+    </div>
+
+    <script>
+        $('#navContainer').load('navbar.html');
+
+        //Displays selected breed in the dropdown field
+        var dropdownButton = document.getElementById('dropdownButton');
+        Array.from(document.getElementsByClassName("dropdown-item")).forEach((e) => {
+            e.addEventListener('click', () => {
+                dropdownButton.innerHTML = e.innerHTML;
+            })
+        })
+    </script>
+</body>
+</html>

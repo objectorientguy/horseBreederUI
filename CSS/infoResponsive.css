@@ -82,7 +82,7 @@
     .typeAbout input,
     .parents input,
     .profileForm input,
-    .changePassword input {
+    .changePassword input,.createContactForm input, .createContactAbout input, #dropdownButton {
         width: 150px;
         height: 22px;
     }
@@ -209,10 +209,6 @@
         font-size: 16px;
     }
 
-    #addContact img {
-        width: 15%;
-    }
-
     .contacts h1 {
         font-size: 24px;
     }
@@ -257,10 +253,15 @@
     }
 
     .profileForm button,
-    .changePassword button {
+    .changePassword button,#saveContactButton  {
         font-size: 16px;
         padding: 0px;
         height: 32px;
+    }
+
+    #saveContactButton {
+        width: 100px;
+        font-size: 14px;
     }
 
     .changePassword button {
@@ -279,6 +280,22 @@
         width: 120px;
         font-size: 10px;
         height: 32px;
+    }
+
+    .contactName img, .animalName img {
+        margin-bottom: -4px;
+    }
+
+    .createContactForm h1 {
+        font-size: 3.4em;
+    }
+
+    .create-contact-form label{
+        font-size: 1.4em;
+    }
+
+    #dropdownButton{
+        font-size: 8px;
     }
 
 }
@@ -346,7 +363,7 @@
     .typeAbout input,
     .parents input,
     .profileForm input,
-    .changePassword input {
+    .changePassword input,.createContactForm input, .createContactAbout input, #dropdownButton {
         width: 250px;
     }
 
@@ -425,10 +442,6 @@
         font-size: 16px;
     }
 
-    #addContact img {
-        width: 15%;
-    }
-
     .contacts h1 {
         font-size: 24px;
     }
@@ -461,11 +474,11 @@
     }
 
     .profileForm button,
-    .changePassword button {
+    .changePassword button,#saveContactButton {
         font-size: 16px;
     }
 
-    .changePassword button {
+    .changePassword button,#saveContactButton {
         width: 250px;
     }
 
@@ -475,5 +488,9 @@
 
     .status button {
         height: 38px;
+    }
+
+    .createContactForm h1 {
+        font-size: 5.4em;
     }
 }

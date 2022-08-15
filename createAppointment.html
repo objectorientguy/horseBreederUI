@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact List</title>
+    <title>Create Appointment</title>
     <link rel="stylesheet" href="CSS/navbar.css">
     <link rel="stylesheet" href="CSS/basicInfo.css">
     <link rel="stylesheet" href="CSS/infoResponsive.css">
@@ -18,7 +19,9 @@
         <!-- Navbar will be loaded here through jQuery -->
     </div>
     <hr>
+    <!-- This container holds 2 parts -->
     <div class="outer-container">
+        <!-- Left part - Sidenav -->
         <div class="leftPart">
             <div class="sidebarHolder">
                 <h4>Breed Details</h4>
@@ -38,6 +41,8 @@
             </div>
             <div class="sidebarLine"></div>
         </div>
+
+        <!-- Right Part - Info -->
         <div class="rightPart">
             <div class="sectionOne">
                 <img src="assets/images/welsh-pony-running-standing-high-260nw-1175510683 1.png" alt="" id="animalImg">
@@ -51,51 +56,9 @@
                 <input type="text" name="searchBreeds" id="searchBreeds" placeholder="Search your breeds">
             </div>
 
-            <div class="sectionTwo contacts">
-                <div class="contactsHead">
-                    <h1>Contacts</h1>
-                    <span id="addContact"><img src="assets/images/addContact.png" alt="">&nbsp;Add Contact</span>
-                </div>
-                <div class="table-container">
-                    <table>
-                        <tr>
-                            <th>Name</th>
-                            <th>Contact</th>
-                            <th>Profession</th>
-                            <th>Email Address</th>
-                        </tr>
-                        <tr>
-                            <td class="contactName"><img src="assets/images/contact1.png" alt="">&nbsp;&nbsp;Eellie
-                                Abraha</td>
-                            <td>8888881800</td>
-                            <td>Doctor</td>
-                            <td class="emailOfContact">michelle@gmail.com <span><img src="assets/images/editContact.png"
-                                        alt=""></span>
-                                <div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="contactName"><img src="assets/images/contact1.png" alt="">&nbsp;&nbsp;Eellie
-                                Abraha</td>
-                            <td>8888881800</td>
-                            <td>Doctor</td>
-                            <td class="emailOfContact">michelle@gmail.com <span><img src="assets/images/editContact.png"
-                                        alt=""></span>
-                                <div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="contactName"><img src="assets/images/contact1.png" alt="">&nbsp;&nbsp;Eellie
-                                Abraha</td>
-                            <td>8888881800</td>
-                            <td>Doctor</td>
-                            <td class="emailOfContact">michelle@gmail.com <span><img src="assets/images/editContact.png"
-                                        alt=""></span>
-                                <div class="separator"></div><span><img src="assets/images/deleteRed.png" alt=""></span>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="sectionTwo">
+                
+               
             </div>
         </div>
     </div>
@@ -110,13 +73,13 @@
             dustbin.src = 'assets/images/deleteRed.png';
         })
 
-        deleteButton.addEventListener('mouseup', () => {
+        deleteButton.addEventListener('mouseup',()=>{
             deleteButton.style.border = '1px solid #696161';
-            deleteButton.style.color = ' #696161';
-            dustbin.src = 'assets/images/deleteGrey.png';
+                deleteButton.style.color = ' #696161';
+                dustbin.src = 'assets/images/deleteGrey.png';
         })
 
-        window.onload(window.open('profileDetails.html', '_blank'));
+        // window.onload(window.open('parentsDetails.html','_blank'));
     </script>
 </body>
 </html>
