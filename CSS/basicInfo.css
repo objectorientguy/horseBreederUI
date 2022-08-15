@@ -30,7 +30,7 @@ body {
 .tickBox,
 .upload-popup,
 .galleryHead,
-.contactsHead,
+.contactsHead, .registeredUsersHead,
 .emailOfContact,
 .status,
 .transfers,
@@ -475,7 +475,7 @@ button:hover {
 }
 
 .gallery,
-.contacts,
+.contacts, .registeredUsers,
 .transfers {
     flex-direction: column;
 }
@@ -485,7 +485,7 @@ button:hover {
 }
 
 .galleryHead,
-.contactsHead,
+.contactsHead, .registeredUsersHead,
 .transfersHead {
     width: 90%;
     align-items: center;
@@ -543,6 +543,7 @@ table {
 th {
     font-size: 2.4em;
     font-weight: 700;
+    text-align: center;
     color: #473A2E;
     background: #F3F6F9;
 }
@@ -722,4 +723,13 @@ td {
     margin: 32px 0px;
     font-size: 24px;
     width: 300px;
+}
+
+.registeredUsers .contactName img{
+    margin-bottom: 0px;
+}
+
+.registeredUsers h1{
+    font-weight: 700;
+    margin: 32px 0px;
 }
