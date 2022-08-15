@@ -5,10 +5,15 @@
 
     .sidebarHolder {
         width: 138px;
+        margin-left: 24px;
     }
 
     .leftPart {
         font-size: 5px;
+    }
+
+    .leftPart h3{
+        font-size: 17px;
     }
 
     .sideBarImg {
@@ -38,6 +43,22 @@
 
     #animalImg {
         width: 14%;
+    }
+
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    h4{
+        font-size: 8px;
     }
 
     .name h4 {
@@ -109,6 +130,11 @@
 
     .parents {
         height: 150px;
+        width: 80%;
+    }
+
+    label{
+        font-size: 16px;
     }
 
     #saveParentsInfoButton,
@@ -237,6 +263,7 @@
 
     .proSideNav {
         width: 125px;
+        margin-left: 16px;
     }
 
     .proSideNav a {
@@ -310,8 +337,25 @@
         font-size: 7px;
     }
 
+    .leftPart h3{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
     .sidebarHolder {
         width: 174px;
+        margin-left: 24px;
+    }
+
+    label{
+        font-size: 20px;
     }
 
     #deleteButton {
@@ -492,5 +536,9 @@
 
     .createContactForm h1 {
         font-size: 5.4em;
+    }
+
+    .proSideNav {
+       margin-left: 16px;
     }
 }

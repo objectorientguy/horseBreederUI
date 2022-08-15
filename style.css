@@ -53,14 +53,11 @@ h1 {
 }
 
 #brandLogo {
-    height: 24px !important;
-    width: 24px !important;
     background-color: #473A2E;
     border-radius: 20px;
 }
 
 #brandName {
-    font-size: 2.4em !important;
     margin-bottom: 80px !important;
     margin-right: 24px !important;
     align-items: center !important;
@@ -78,31 +75,19 @@ h1 {
 }
 
 label {
-    font-size: 2.1em;
     color: rgba(105, 97, 97, 1);
     font-weight: 600;
 }
 
 /* #signIn, */
 #signUp {
-    font-size: 3.6em;
     margin-top: -12px;
     font-weight: 700;
 }
 
 #signInform input {
-    height: 52px;
-    width: 100%;
     margin-top: 12px;
-    font-size: initial;
     padding: 5px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    border: 1px solid #DB6516;
-}
-
-input:focus {
-    outline: 1px solid rgba(227, 125, 14, 1);
 }
 
 a {
@@ -112,24 +97,15 @@ a {
 
 a:hover {
     color: #1977F3;
+    text-decoration: underline;
 }
 
 #signInform button {
-    width: 100%;
-    height: 52px;
-    border-radius: 15px;
     font-size: 2em;
     padding: 3px;
-    font-weight: 700;
-}
-
-button:hover {
-    cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
 }
 
 #forgotPass {
-    font-size: 1.7em;
     margin: 13px 0px 24px 0px;
     justify-content: flex-end;
     font-weight: 600;
@@ -137,17 +113,9 @@ button:hover {
 
 #notRegistered {
     justify-content: start;
-    font-size: 1.7em;
     margin: 10px 0px 32px 0px;
     font-weight: 600;
     color: #335232;
-    ;
-}
-
-#createAccount:hover,
-#forgotPass:hover,
-#signUp a:hover {
-    text-decoration: underline;
 }
 
 .otp {
@@ -159,7 +127,6 @@ button:hover {
 #otpSignIn {
     color: #727272;
     font-weight: 400;
-    font-size: 17px;
 }
 
 .line {

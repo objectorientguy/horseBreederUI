@@ -46,9 +46,8 @@ body {
     font-size: 10px;
 }
 
-.leftPart h4 {
+.leftPart h3 {
     margin-left: 20px;
-    font-size: 2.4em;
 }
 
 .leftPart a {
@@ -71,11 +70,9 @@ body {
 
 #deleteButton {
     background: #FFFFFF;
-    width: 100%;
     padding: 0%;
     color: #696161;
     border: 1px solid #696161;
-    border-radius: 15px;
     font-size: 20px;
     align-items: center;
     justify-content: center;
@@ -114,18 +111,16 @@ body {
     font-size: 10px;
 }
 
+/* Basic Info */
+
 .name {
     margin-left: 32px;
     color: #F1F0F2;
-}
-
-.name h2 {
-    font-size: 3.6em;
+    width: 50%;
 }
 
 .name h4 {
     margin-top: -26px;
-    font-size: 2em;
     font-weight: 400;
 }
 
@@ -170,18 +165,14 @@ body {
 }
 
 .sectionTwo h1 {
-    font-size: 6.4em;
     color: #473A2E;
 }
 
 .sectionTwo h2 {
-    font-size: 3.2em;
-    color: #696161;
-    margin-top: 0%;
+    color: #473A2E;
 }
 
 .sectionTwo h3 {
-    font-size: 2.4em;
     color: #DB6516;
     margin-bottom: 0%;
 }
@@ -227,7 +218,6 @@ body {
 
 .sectionTwo label,
 .parents label, .create-contact-form label {
-    font-size: 2.4em;
     color: #696161;
     font-weight: 600;
 }
@@ -236,12 +226,6 @@ body {
     margin-bottom: 16px;
     font-weight: 700;
     color: #473A2E;
-}
-
-.basicForm h1,
-#transferH1,
-.changePassword h1 {
-    font-size: 3.6em;
 }
 
 .basicForm input,
@@ -253,8 +237,6 @@ body {
     width: 380px;
     height: 42px;
     margin: 30px 0px;
-    border-radius: 15px;
-    border: 1px solid #DB6516;
     padding: 10px;
 }
 
@@ -275,24 +257,16 @@ textarea {
     flex-direction: column;
 }
 
-textarea:focus,
-input:focus {
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.1);
+textarea:focus{
     outline: 1px solid rgba(227, 125, 14, 1);
 }
 
 .basicForm button {
     margin: 24px 0px 107px 0px;
-    font-size: 24px;
     font-weight: 700;
-    border-radius: 15px;
 }
 
-button:hover {
-    cursor: pointer;
-    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
-}
-
+/* Parents Details */
 .parentsInfo {
     width: 90%;
 }
@@ -312,12 +286,11 @@ button:hover {
 #saveParentsInfoButton {
     display: none;
     width: 263px;
-    font-size: 24px;
     font-weight: 700;
-    border-radius: 15px;
     margin: 24px 0px;
 }
 
+/* Transfer Request */
 .transferDiv,
 .ownerDesc {
     flex-direction: column;
@@ -331,7 +304,6 @@ button:hover {
 #proceedButton {
     width: 360px;
     margin: 32px auto 48px 69px;
-    font-size: 24px;
 }
 
 .transferForm {
@@ -368,7 +340,6 @@ button:hover {
 }
 
 .uploadPicture h4 {
-    font-size: 20px;
     margin: 0px;
 }
 
@@ -377,15 +348,12 @@ button:hover {
     height: 61px;
     background: #FFFFFF;
     color: #DB6516;
-    font-size: 24px;
     font-weight: 700;
-    border-radius: 15px;
     border: 1px solid #DB6516;
 }
 
 .uploadPicture button:hover {
     box-shadow: 0px 10px 20px rgba(30, 30, 30, 0.15);
-    cursor: pointer;
 }
 
 #uploadPopup-container {
@@ -468,11 +436,14 @@ button:hover {
 
 .tickBox img {
     height: 28px;
+    cursor: pointer;
 }
 
 .tickPara {
     font-size: 20px;
 }
+
+/* Gallery */
 
 .gallery,
 .contacts, .registeredUsers,
@@ -481,7 +452,7 @@ button:hover {
 }
 
 .gallery button {
-    font-size: 24px;
+  width: 250px;
 }
 
 .galleryHead,
@@ -513,6 +484,8 @@ button:hover {
 .galleryVideos img {
     margin: 24px 32px 0px 0px;
 }
+
+/* Contact List */
 
 #addContact {
     display: flex;

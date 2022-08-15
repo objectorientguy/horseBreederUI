@@ -8,13 +8,9 @@ body {
 }
 
 button {
-    height: 52px;
-    padding: 10px 50px;
-    font-family: 'Open Sans', sans-serif;
-    border-radius: 6px;
-    border: none;
-    background: linear-gradient(89.17deg, #DB6516 0%, #E37D0E 100%);
     color: #F1F0F2;
+    border: none;
+    width: 317px !important;
 }
 
 a {
@@ -25,10 +21,6 @@ a {
     color: #ffffff;
 }
 
-.createBreed:hover {
-    box-shadow: 0px 10px 20px rgba(227, 125, 14, 0.3);
-}
-
 /* Section one */
 
 .sectionOne {
@@ -36,18 +28,12 @@ a {
     text-align: center;
 }
 
-.sectionOne h3 {
-    font-size: 3.6em;
-}
-
-.sectionOne h4 {
-    font-size: 6.4em;
+.sectionOne h1 {
     margin-top: 80px;
     font-weight: 700;
 }
 
 .sectionOne button {
-    font-size: 2.4em;
     padding: 0px 50px;
     margin-top: 32px;
 }
@@ -65,8 +51,7 @@ a {
     padding: 60px;
 }
 
-.description h4 {
-    font-size: 6.4em;
+.description h1 {
     font-weight: 700;
 }
 
@@ -131,15 +116,7 @@ a {
 }
 
 @media(min-width:1024px) and (max-width:1439px) {
-    #brandName {
-        font-size: 2em;
-    }
-
-    #brandLogo {
-        height: 24px;
-        width: 24px;
-    }
-
+  
     button {
         height: 42px;
         padding: 4px 50px;

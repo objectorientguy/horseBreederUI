@@ -10,23 +10,13 @@
 /* Sign up form */
 
 #signUpform input {
-    height: 52px;
     width: 95%;
-    font-size: initial;
     padding: 5px;
-    background: #FFFFFF;
-    border-radius: 6px;
-    border: 1px solid #DB6516;
-}
-
-input:focus {
-    outline: 1px solid rgba(227, 125, 14, 1);
 }
 
 label {
     margin: 21px 0px 12px 0px;
 }
-
 
 #signUpform {
     width: 600px;
@@ -36,9 +26,7 @@ label {
     height: 42px;
     width: 45%;
     font-size: 2em;
-    font-weight: 700;
     padding: 2px;
-    border-radius: 6px;
     border: 1px solid #DB6516;
 }
 
@@ -87,15 +75,11 @@ label {
     height: 100%;
     width: 50%;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 #owner {
     color: #DB6516;
-}
-
-#breeder:hover,
-#owner:hover {
-    cursor: pointer;
 }
 
 .buttonContainer {
